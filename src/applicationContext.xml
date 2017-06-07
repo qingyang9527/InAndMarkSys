@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+	xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+	<bean id="dataSource"
+		class="org.apache.commons.dbcp.BasicDataSource">
+		<property name="driverClassName"
+			value="com.mysql.jdbc.Driver">
+		</property>
+		<property name="url"
+			value="jdbc:mysql://localhost:3306/inandmarksys">
+		</property>
+		<property name="username" value="root"></property>
+		<property name="password" value="sss22219"></property>
+	</bean>
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource">
+			<ref bean="dataSource" />
+		</property>
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">
+					org.hibernate.dialect.MySQLDialect
+				</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">true</prop>
+			</props>
+		</property>
+		<property name="mappingResources">
+			<list>
+			<value>com/hm/InAndMarkSys/model/TbCk.hbm.xml</value>
+			<value>com/hm/InAndMarkSys/model/Admin.hbm.xml</value>
+			<value>com/hm/InAndMarkSys/model/TbRuku.hbm.xml</value>
+			<value>com/hm/InAndMarkSys/model/TbWl.hbm.xml</value>
+			<value>com/hm/InAndMarkSys/model/TbCgWl.hbm.xml</value>
+			<value>com/hm/InAndMarkSys/model/TbCg.hbm.xml</value>
+			<value>com/hm/InAndMarkSys/model/TbXs.hbm.xml</value>
+			<value>com/hm/InAndMarkSys/model/TbUser.hbm.xml</value>
+			<value>com/hm/InAndMarkSys/model/TbXsRecord.hbm.xml</value>
+			<value>com/hm/InAndMarkSys/model/TbGys.hbm.xml</value></list>
+		</property></bean>
+		<!-- 定义一个事务管理器 -->
+		<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory"/>
+		</bean>
+		<!-- BaseDao的配置 -->
+		<bean id="baseDao" class="com.hm.InAndMarkSys.dao.imp.BaseDao">
+			<property name="sessionFactory" ref="sessionFactory"></property>
+		</bean>
+		
+		<!-- DAOIMP层的配置 -->
+		<bean id="adminDaoImp" class="com.hm.InAndMarkSys.dao.imp.AdminDaoImp" parent="baseDao">
+		</bean>
+		
+		<bean id="cgDaoImp" class="com.hm.InAndMarkSys.dao.imp.CgDaoImp" parent="baseDao">
+		</bean>
+		
+		<bean id="wlDaoImp" class="com.hm.InAndMarkSys.dao.imp.WlDaoImp" parent="baseDao">
+		</bean>
+		
+		
+		<!-- Service层的配置 -->
+		<bean id="adminServiceImp" class="com.hm.InAndMarkSys.service.imp.AdminServiceImp">
+			<property name="adminDao" ref="adminDaoImp"></property>
+		</bean>
+		
+		<bean id="wlServiceImp" class="com.hm.InAndMarkSys.service.imp.WlServiceImp">
+			<property name="wlDao" ref="wlDaoImp"></property>
+		</bean>
+		
+		<!-- Action层的配置 -->
+		
+		<bean id="loginAction" class="com.hm.InAndMarkSys.action.LoginAction">
+			<property name="adminService" ref="adminServiceImp"></property>
+		</bean>
+		
+		<bean id="WlAction" class="com.hm.InAndMarkSys.action.WlAction">
+			<property name="wlService" ref="wlServiceImp"></property>
+		</bean>
+		</beans>

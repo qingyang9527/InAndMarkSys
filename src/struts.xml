@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+
+	<package name="struts2" namespace="/" extends="struts-default">
+		<action name="login" class="loginAction" method="login">
+			<result name="success">/WEB-INF/page/main.jsp</result>
+			<result name="error">/login.html</result>
+		</action>
+		
+		<action name="loginout" class="loginAction" method="loginOut">
+			<result name="success">/login.html</result>
+		</action>
+	</package>
+	
+	<package name="forward" namespace="/" extends="struts-default">
+		<action name="forward_*" class="com.hm.InAndMarkSys.action.LoginAction" method="{1}">
+			<result name="top">/WEB-INF/page/top.jsp</result>
+			<result name="left">/WEB-INF/page/left.jsp</result>
+			<result name="right">/WEB-INF/page/right.jsp</result>
+		</action>
+	</package>
+	
+	<package name="WuLiao" namespdface="/" extends="struts-default">
+		<action name="wl_*" class="wlAction" method="{1}">
+			<result name="">/WEB-INF/page/wlList.jsp</result>
+		</action>
+	</package>
+
+</struts>    
