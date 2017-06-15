@@ -26,7 +26,7 @@
             </column>
         </property>
         <property name="xstime" type="java.sql.Timestamp">
-            <column name="xstime" length="19">
+            <column name="xstime" length="0">
                 <comment>销售时间</comment>
             </column>
         </property>

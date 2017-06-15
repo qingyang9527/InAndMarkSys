@@ -29,20 +29,21 @@
 				</prop>
 				<prop key="hibernate.show_sql">true</prop>
 				<prop key="hibernate.format_sql">true</prop>
+				
 			</props>
 		</property>
 		<property name="mappingResources">
 			<list>
-			<value>com/hm/InAndMarkSys/model/TbCk.hbm.xml</value>
-			<value>com/hm/InAndMarkSys/model/Admin.hbm.xml</value>
-			<value>com/hm/InAndMarkSys/model/TbRuku.hbm.xml</value>
-			<value>com/hm/InAndMarkSys/model/TbWl.hbm.xml</value>
-			<value>com/hm/InAndMarkSys/model/TbCgWl.hbm.xml</value>
-			<value>com/hm/InAndMarkSys/model/TbCg.hbm.xml</value>
-			<value>com/hm/InAndMarkSys/model/TbXs.hbm.xml</value>
-			<value>com/hm/InAndMarkSys/model/TbUser.hbm.xml</value>
-			<value>com/hm/InAndMarkSys/model/TbXsRecord.hbm.xml</value>
-			<value>com/hm/InAndMarkSys/model/TbGys.hbm.xml</value></list>
+		<value>com/hm/InAndMarkSys/model/TbCk.hbm.xml</value>
+		<value>com/hm/InAndMarkSys/model/Admin.hbm.xml</value>
+		<value>com/hm/InAndMarkSys/model/TbRuku.hbm.xml</value>
+		<value>com/hm/InAndMarkSys/model/TbWl.hbm.xml</value>
+		<value>com/hm/InAndMarkSys/model/TbCgWl.hbm.xml</value>
+		<value>com/hm/InAndMarkSys/model/TbCg.hbm.xml</value>
+		<value>com/hm/InAndMarkSys/model/TbXs.hbm.xml</value>
+		<value>com/hm/InAndMarkSys/model/TbUser.hbm.xml</value>
+		<value>com/hm/InAndMarkSys/model/TbXsRecord.hbm.xml</value>
+		<value>com/hm/InAndMarkSys/model/TbGys.hbm.xml</value></list>
 		</property></bean>
 		<!-- 定义一个事务管理器 -->
 		<bean id="transactionManager" class="org.springframework.orm.hibernate3.HibernateTransactionManager">
@@ -56,12 +57,15 @@
 		<!-- DAOIMP层的配置 -->
 		<bean id="adminDaoImp" class="com.hm.InAndMarkSys.dao.imp.AdminDaoImp" parent="baseDao">
 		</bean>
-		
-		<bean id="cgDaoImp" class="com.hm.InAndMarkSys.dao.imp.CgDaoImp" parent="baseDao">
-		</bean>
-		
+				
 		<bean id="wlDaoImp" class="com.hm.InAndMarkSys.dao.imp.WlDaoImp" parent="baseDao">
 		</bean>
+		
+		<bean id="gysDaoImp" class="com.hm.InAndMarkSys.dao.imp.GysDaoImp" parent="baseDao"></bean>
+		
+		<bean id="ckDaoImp" class="com.hm.InAndMarkSys.dao.imp.CkDaoImp" parent="baseDao"></bean>
+		
+		<bean id="rukuDaoImp" class="com.hm.InAndMarkSys.dao.imp.RuKuDaoImp" parent="baseDao"></bean>
 		
 		
 		<!-- Service层的配置 -->
@@ -73,13 +77,38 @@
 			<property name="wlDao" ref="wlDaoImp"></property>
 		</bean>
 		
+		<bean id="gysServiceImp" class="com.hm.InAndMarkSys.service.imp.GysServiceImp">
+			<property name="gysDao" ref="gysDaoImp"></property>
+		</bean>
+		
+		<bean id="ckServiceImp" class="com.hm.InAndMarkSys.service.imp.CkServiceImp">
+			<property name="ckDao" ref="ckDaoImp"></property>
+		</bean>
+		
+		<bean id="rukuServiceImp" class="com.hm.InAndMarkSys.service.imp.RuKuService">
+			<property name="ruKuDao" ref="rukuDaoImp"></property>
+		</bean>
+		
 		<!-- Action层的配置 -->
 		
 		<bean id="loginAction" class="com.hm.InAndMarkSys.action.LoginAction">
 			<property name="adminService" ref="adminServiceImp"></property>
 		</bean>
 		
-		<bean id="WlAction" class="com.hm.InAndMarkSys.action.WlAction">
+		<bean id="wlAction" class="com.hm.InAndMarkSys.action.WlAction">
 			<property name="wlService" ref="wlServiceImp"></property>
 		</bean>
+		
+		<bean id="gysAction" class="com.hm.InAndMarkSys.action.GysAction">
+			<property name="gysService" ref="gysServiceImp"></property>
+		</bean>
+		
+		<bean id="ckAction" class="com.hm.InAndMarkSys.action.CkAction">
+			<property name="ckService" ref="ckServiceImp"></property>
+		</bean>
+		
+		<bean id="ruKuAction" class="com.hm.InAndMarkSys.action.RuKuAction">
+			<property name="ruKuService" ref="rukuServiceImp"></property>
+		</bean>
+		
 		</beans>

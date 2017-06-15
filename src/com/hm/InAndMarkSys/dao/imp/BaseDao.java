@@ -3,7 +3,7 @@ package com.hm.InAndMarkSys.dao.imp;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 
-public class BaseDao {
+public class BaseDao{
 
 	private SessionFactory sessionFactory;
 

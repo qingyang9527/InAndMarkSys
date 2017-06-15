@@ -24,11 +24,9 @@
         <property name="gysMail" type="java.lang.String">
             <column name="gysMail" />
         </property>
-        <set name="tbWls" inverse="true">
+        <set name="tbWls" inverse="true" cascade="save-update">
             <key>
-                <column name="gysid">
-                    <comment>所属供应商</comment>
-                </column>
+                <column name="gysid" />
             </key>
             <one-to-many class="com.hm.InAndMarkSys.model.TbWl" />
         </set>

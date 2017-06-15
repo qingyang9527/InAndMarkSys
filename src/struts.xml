@@ -13,7 +13,7 @@
 		</action>
 	</package>
 	
-	<package name="forward" namespace="/" extends="struts-default">
+	<package name="forward" namespace="" extends="struts-default">
 		<action name="forward_*" class="com.hm.InAndMarkSys.action.LoginAction" method="{1}">
 			<result name="top">/WEB-INF/page/top.jsp</result>
 			<result name="left">/WEB-INF/page/left.jsp</result>
@@ -21,10 +21,49 @@
 		</action>
 	</package>
 	
-	<package name="WuLiao" namespdface="/" extends="struts-default">
+	<package name="WuLiao" namespace="/page" extends="struts-default">
 		<action name="wl_*" class="wlAction" method="{1}">
-			<result name="">/WEB-INF/page/wlList.jsp</result>
+			<result name="query_success">/WEB-INF/page/wlList.jsp</result>
+			<result name="edit_success">/WEB-INF/page/wledit.jsp</result>
+			<result name="update_success" type="redirectAction">wl_queryAll</result>
+			<result name="add_success" type="redirectAction">wl_queryAll</result>
+			<result name="delete_success" type="redirectAction">wl_queryAll</result>
+			<result name="forward_success">/WEB-INF/page/wlAdd.jsp</result>
 		</action>
 	</package>
+	
+		<package name="gys" namespace="/page" extends="struts-default">
+		<action name="gys_*" class="gysAction" method="{1}">
+			<result name="query_success">/WEB-INF/page/gysList.jsp</result>
+			<result name="edit_success">/WEB-INF/page/gysedit.jsp</result>
+			<result name="update_success" type="redirectAction">gys_queryPage</result>
+			<result name="add_success" type="redirectAction">gys_queryPage</result>
+			<result name="delete_success" type="redirectAction">gys_queryPage</result>
+			<result name="forward_success">/WEB-INF/page/gysAdd.jsp</result>
+		</action>
+	</package>
+	
+	<package name="ck" namespace="/page" extends="struts-default">
+		<action name="ck_*" class="ckAction" method="{1}">
+			<result name="query_success">/WEB-INF/page/cklist.jsp</result>
+			<result name="edit_success">/WEB-INF/page/ckedit.jsp</result>
+			<result name="update_success" type="redirectAction">ck_queryPage</result>
+			<result name="add_success" type="redirectAction">ck_queryPage</result>
+			<result name="delete_success" type="redirectAction">ck_queryPage</result>
+			<result name="forward_success">/WEB-INF/page/ckAdd.jsp</result>
+		</action>
+	</package>
+	
+	<package name="ruku" namespace="/page" extends="struts-default">
+		<action name="ruku_*" class="ruKuAction" method="{1}">
+			<result name="query_success">/WEB-INF/page/rukulist.jsp</result>
+			<result name="edit_success">/WEB-INF/page/rukuedit.jsp</result>
+			<result name="update_success" type="redirectAction">ruku_queryPage</result>
+			<result name="add_success" type="redirectAction">ruku_queryPage</result>
+			<result name="delete_success" type="redirectAction">ruku_queryPage</result>
+			<result name="forward_success">/WEB-INF/page/rukuAdd.jsp</result>
+		</action>
+	</package>
+	
 
 </struts>    

@@ -11,4 +11,5 @@ public interface WlService {
 	int getTotalSize();
 	void delete(Integer WlId);
 	void update(TbWl tbWl);
+	List queryGys();
 }

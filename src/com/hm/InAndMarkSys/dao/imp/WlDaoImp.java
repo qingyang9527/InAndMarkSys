@@ -7,6 +7,7 @@ import org.hibernate.Session;
 import org.hibernate.Transaction;
 
 import com.hm.InAndMarkSys.dao.WlDao;
+import com.hm.InAndMarkSys.model.TbGys;
 import com.hm.InAndMarkSys.model.TbWl;
 
 public class WlDaoImp extends BaseDao implements WlDao {
@@ -76,6 +77,16 @@ public class WlDaoImp extends BaseDao implements WlDao {
 		int totalSize=wl.size();
 		session.close();
 		return totalSize;
+	}
+
+	@Override
+	public List queryGys() {
+		Session session=getSession();
+		Query query=session.createQuery("from TbGys");
+		List gysList=query.list();
+		session.close();
+		return gysList;
+		
 	}
 
 }

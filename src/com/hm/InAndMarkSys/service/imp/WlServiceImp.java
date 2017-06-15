@@ -49,4 +49,9 @@ public class WlServiceImp implements WlService {
 		return this.wlDao.getTotalSize();
 	}
 
+	@Override
+	public List queryGys() {
+		return this.wlDao.queryGys();
+	}
+
 }

@@ -1,4 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+<%@taglib prefix="s" uri="/struts-tags" %>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -18,7 +19,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<meta http-equiv="description" content="This is my page">
 	<link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.js"></script>
-
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/jsapi.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/format+zh_CN,default,corechart.I.js"></script>		
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.gvChart-1.0.1.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery.ba-resize.min.js"></script>
+<script type="text/javascript" src="<%=path %>/layer-v1.9.3/1.9.1/jquery.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/layer-v1.9.3/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="${pageContext.request.contextPath}/layer-v1.9.3/1.9.1/layer.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
   $(".click").click(function(){
@@ -38,11 +45,26 @@ $(document).ready(function(){
 });
 
 });
+
+$('#parentIframe').click(function(){
+	alert("弹出");
+  layer.open({
+  type: 2,
+  title: 'iframe父子操作',
+  maxmin: true,
+  shadeClose: true, //点击遮罩关闭层
+  area : ['800px' , '520px'],
+  content: 'test/iframe.html'
+  });
+});
+
+$('#test1').on('click', function(){
+  layer.msg('Hello layer');
+});
 </script>
   </head>
   
 <body>
-
 	<div class="place">
     <span>位置：</span>
     <ul class="placeul">
@@ -57,12 +79,9 @@ $(document).ready(function(){
     <div class="tools">
     
     	<ul class="toolbar">
-        <li class="click"><span><img src="${pageContext.request.contextPath}/images/t01.png" /></span>添加</li>
-        <li class="click"><span><img src="${pageContext.request.contextPath}/images/t02.png" /></span>修改</li>
-        <li><span><img src="${pageContext.request.contextPath}/images/t03.png" /></span>删除</li>
+        <li><a href="${pageContext.request.contextPath }/page/wl_forward.action"><span><img src="${pageContext.request.contextPath}/images/t01.png"/></span>添加</a></li>
         <li><span><img src="${pageContext.request.contextPath}/images/t04.png" /></span>统计</li>
-        </ul>
-        
+		</ul>
         
         <ul class="toolbar1">
         <li><span><img src="${pageContext.request.contextPath}/images/t05.png" /></span>设置</li>
@@ -75,47 +94,54 @@ $(document).ready(function(){
     	<thead>
     	<tr>
         <th><input name="" type="checkbox" value="" checked="checked"/></th>
-        <th>编号<i class="sort"><img src="images/px.gif" /></i></th>
-        <th>标题</th>
-        <th>用户</th>
-        <th>籍贯</th>
-        <th>发布时间</th>
-        <th>是否审核</th>
+        <th>编号<i class="sort"></i></th>
+        <th>物料名称</th>
+        <th>物料单价（￥）</th>
+        <th>物料数量</th>
+        <th>物料总价（￥）</th>
+        <th>所属供应商</th>
         <th>操作</th>
         </tr>
         </thead>
         <tbody>
+        <s:iterator value="#request['wldata']" id="wldata">
         <tr>
         <td><input name="" type="checkbox" value="" /></td>
-        <td>20130908</td>
-        <td>王金平幕僚：马英九声明字字见血 人活着没意思</td>
-        <td>admin</td>
-        <td>江苏南京</td>
-        <td>2013-09-09 15:05</td>
-        <td>已审核</td>
-        <td><a href="#" class="tablelink">查看</a>     <a href="#" class="tablelink"> 删除</a></td>
+        <td><s:property value="#wldata.wlid"/></td>
+        <td><s:property value="#wldata.wlname"/></td>
+        <td><s:property value="#wldata.wlprice"/></td>
+        <td><s:property value="#wldata.wlnum"/></td>
+        <td><s:property value="#wldata.wltotalprice"/></td>
+        <td><s:property value="#wldata.tbGys.gysName"/></td>
+        <td><a href="${pageContext.request.contextPath }/page/wl_edit.action?wlid=<s:property value="#wldata.wlid"/>" class="click" id="">编辑</a>     <a href="${pageContext.request.contextPath }/page/wl_delete.action?wlid=<s:property value="#wldata.wlid"/>" class="tablelink"> 删除</a></td>
         </tr> 
-                
+          </s:iterator>      
         </tbody>
     </table>
     
-   
     <div class="pagin">
-    	<div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
+       <s:set name="pager" value="#request.pager"/>
+    	<div class="message">共<i class="blue"><s:property value="#pager.totalSize"/></s></i>条记录，当前显示第&nbsp;<i class="blue"><s:property value="#pager.currentPage"/>&nbsp;</i>页</div>
         <ul class="paginList">
-        <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
+        <s:if test="#pager.hasFirst">
+        <li class="paginItem"><a href="${pageContext.request.contextPath }/page/wl_queryAll.action?currentPage=1">首页</a></li>
+        </s:if>
+         <s:if test="#pager.hasPrevious">
+        <li class="paginItem"><a href="${pageContext.request.contextPath }/page/wl_queryAll.action?currentPage=<s:property value="#pager.currentPage-1"/>">上一页</a></li>
+        </s:if>
         <li class="paginItem"><a href="javascript:;">1</a></li>
         <li class="paginItem current"><a href="javascript:;">2</a></li>
         <li class="paginItem"><a href="javascript:;">3</a></li>
-        <li class="paginItem"><a href="javascript:;">4</a></li>
-        <li class="paginItem"><a href="javascript:;">5</a></li>
         <li class="paginItem more"><a href="javascript:;">...</a></li>
-        <li class="paginItem"><a href="javascript:;">10</a></li>
-        <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
+         <s:if test="#pager.hasNext">
+        <li class="paginItem"><a href="${pageContext.request.contextPath }/page/wl_queryAll.action?currentPage=<s:property value="#pager.currentPage+1"/>">下一页</a></li>
+        </s:if>
+         <s:if test="#pager.hasLast">
+        <li class="paginItem"><a href="${pageContext.request.contextPath }/page/wl_queryAll.action?currentPage=<s:property value="#pager.totalPage"/>">尾页</a></li>
+        </s:if>
         </ul>
     </div>
-    
-    
+   
     <div class="tip">
     	<div class="tiptop"><span>提示信息</span><a></a></div>
         

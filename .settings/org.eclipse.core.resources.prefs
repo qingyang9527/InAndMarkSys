@@ -1,4 +1,7 @@
 eclipse.preferences.version=1
+encoding//WebRoot/MyJsp.jsp=UTF-8
 encoding//WebRoot/WEB-INF/page/left.jsp=UTF-8
 encoding//WebRoot/WEB-INF/page/top.jsp=UTF-8
+encoding//WebRoot/WEB-INF/page/wlAdd.jsp=UTF-8
 encoding//WebRoot/WEB-INF/page/wlList.jsp=UTF-8
+encoding//WebRoot/WEB-INF/page/wledit.jsp=UTF-8

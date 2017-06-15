@@ -10,10 +10,8 @@
             <column name="wlid" />
             <generator class="native" />
         </id>
-        <many-to-one name="tbGys" class="com.hm.InAndMarkSys.model.TbGys" fetch="select">
-            <column name="gysid">
-                <comment>所属供应商</comment>
-            </column>
+        <many-to-one name="tbGys" class="com.hm.InAndMarkSys.model.TbGys" fetch="select" lazy="false">
+            <column name="gysid" />
         </many-to-one>
         <property name="wlname" type="java.lang.String">
             <column name="wlname">
