@@ -11,7 +11,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>修改信息</title>
+    <title>My JSP 'ckedit.jsp' starting page</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
@@ -47,7 +47,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	
   </head>
   
-  <body>
+ <body>
 
 	<div class="place">
     <span>位置：</span>
@@ -60,28 +60,15 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <div class="formbody">
     
     <div class="formtitle"><span>编辑信息</span></div>
-    <form action="${pageContext.request.contextPath }/page/wl_update.action" method="post">
+    <form action="${pageContext.request.contextPath }/page/ck_update.action" method="post">
     <ul class="forminfo">
-    <s:iterator value="#request['EditList']" var="editData">
+ 	<s:iterator value="#request['EditList']" var="editData">
     <input type="hidden" name="id" value="<s:property value="#editData.id"/>"/>
-    <li><label>物料编码</label><input name="wlid" value="<s:property value="#editData.wlid"/>" type="text" class="dfinput" /><i></i></li>
-    <li><label>物料名称</label><input name="wlname" value="<s:property value="#editData.wlname"/>" type="text" class="dfinput" /><i></i></li>
-    <li><label>物料数量</label><input name="wlnum" id="num" value="<s:property value="#editData.wlnum"/>" type="text" class="dfinput" /><i></i></li>
-    <li><label>物料单价</label><input name="wlprice" id="price" value="<s:property value="#editData.wlprice"/>" type="text" class="dfinput" /><i>单位（￥）</i></li>
-    <li><label>物料总价</label><input name="wltotalprice" id="totalprice" value="<s:property value="#editData.wltotalprice"/>" type="text" class="dfinput" /><i>单位（￥）</i></li>
-    <!--<li><label>物料供应商</label><input name="tbGys.id" value="<s:property value="#editData.tbGys.gysName"/>" type="text" class="dfinput" /><i></i></li>-->
-    <li><label>物料供应商<b>*</b></label>  
-    <div class="vocation">
-    <select class="select1"  name="tbGys.id">
-    	<option value="<s:property value="#editData.tbGys.id"/>"><s:property value="#editData.tbGys.gysName"/></option>
-      <s:iterator value="gysList" var="pt">
-       	<option class="eee" value ="${pt.id}">${pt.gysName}</option>
-      </s:iterator>
-    </select>
-    </div>
+    <li><label>物料编码</label><input name="ckid" value="<s:property value="#editData.ckid"/>" type="text" class="dfinput" /><i></i></li>
+    <li><label>物料名称</label><input name="ckname" value="<s:property value="#editData.ckname"/>" type="text" class="dfinput" /><i></i></li>
+    </s:iterator>
     </li>
     <li><label>&nbsp;</label><input name="" type="submit" class="btn" value="确认保存"/></li>
-    </s:iterator>
     </ul>
     
     </form>

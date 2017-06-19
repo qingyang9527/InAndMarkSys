@@ -11,8 +11,9 @@ public class TbWl implements java.io.Serializable {
 
 	// Fields
 
-	private Integer wlid;
+	private Integer id;
 	private TbGys tbGys;
+	private String wlid;
 	private String wlname;
 	private Double wlprice;
 	private Integer wlnum;
@@ -26,10 +27,16 @@ public class TbWl implements java.io.Serializable {
 	public TbWl() {
 	}
 
+	/** minimal constructor */
+	public TbWl(String wlid) {
+		this.wlid = wlid;
+	}
+
 	/** full constructor */
-	public TbWl(TbGys tbGys, String wlname, Double wlprice, Integer wlnum,
-			Double wltotalprice, Set tbXsRecords, Set tbCgWls) {
+	public TbWl(TbGys tbGys, String wlid, String wlname, Double wlprice,
+			Integer wlnum, Double wltotalprice, Set tbXsRecords, Set tbCgWls) {
 		this.tbGys = tbGys;
+		this.wlid = wlid;
 		this.wlname = wlname;
 		this.wlprice = wlprice;
 		this.wlnum = wlnum;
@@ -40,12 +47,12 @@ public class TbWl implements java.io.Serializable {
 
 	// Property accessors
 
-	public Integer getWlid() {
-		return this.wlid;
+	public Integer getId() {
+		return this.id;
 	}
 
-	public void setWlid(Integer wlid) {
-		this.wlid = wlid;
+	public void setId(Integer id) {
+		this.id = id;
 	}
 
 	public TbGys getTbGys() {
@@ -54,6 +61,14 @@ public class TbWl implements java.io.Serializable {
 
 	public void setTbGys(TbGys tbGys) {
 		this.tbGys = tbGys;
+	}
+
+	public String getWlid() {
+		return this.wlid;
+	}
+
+	public void setWlid(String wlid) {
+		this.wlid = wlid;
 	}
 
 	public String getWlname() {

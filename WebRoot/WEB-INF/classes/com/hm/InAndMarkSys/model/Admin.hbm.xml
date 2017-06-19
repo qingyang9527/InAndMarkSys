@@ -18,9 +18,7 @@
         </property>
         <set name="tbRukus" inverse="true">
             <key>
-                <column name="ckadmin">
-                    <comment>仓库管理员</comment>
-                </column>
+                <column name="ckadmin" />
             </key>
             <one-to-many class="com.hm.InAndMarkSys.model.TbRuku" />
         </set>

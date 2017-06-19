@@ -97,6 +97,7 @@
 		
 		<bean id="wlAction" class="com.hm.InAndMarkSys.action.WlAction">
 			<property name="wlService" ref="wlServiceImp"></property>
+			<property name="gysService" ref="gysServiceImp"></property>
 		</bean>
 		
 		<bean id="gysAction" class="com.hm.InAndMarkSys.action.GysAction">

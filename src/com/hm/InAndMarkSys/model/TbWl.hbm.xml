@@ -6,13 +6,18 @@
 -->
 <hibernate-mapping>
     <class name="com.hm.InAndMarkSys.model.TbWl" table="tb_wl" catalog="inandmarksys">
-        <id name="wlid" type="java.lang.Integer">
-            <column name="wlid" />
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
             <generator class="native" />
         </id>
         <many-to-one name="tbGys" class="com.hm.InAndMarkSys.model.TbGys" fetch="select" lazy="false">
-            <column name="gysid" />
+            <column name="gysid" length="50" />
         </many-to-one>
+        <property name="wlid" type="java.lang.String">
+            <column name="wlid" length="20" not-null="true">
+                <comment>物料编码</comment>
+            </column>
+        </property>
         <property name="wlname" type="java.lang.String">
             <column name="wlname">
                 <comment>物料名称</comment>

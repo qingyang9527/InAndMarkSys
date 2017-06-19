@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
+		<%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%@taglib prefix="s" uri="/struts-tags" %>
 <%
 String path = request.getContextPath();
@@ -87,15 +87,13 @@ $(document).ready(function(){
         <s:iterator value="#request['ruKuList']" id="ruKuList">
         <tr>
         <td><input name="" type="checkbox" value="" /></td>
-        <td><s:property value="#ruKuList.id"/></td>
-        <td><s:property value="#ruKuList.ckadmin"/></td>
+        <td><s:property value="#ruKuList.rukuid"/></td>
+        <td><s:property value="#ruKuList.admin.username"/></td>
         <td><s:property value="#ruKuList.rktime"/></td>
         <td><s:property value="#ruKuList.price"/></td>
         <td><s:property value="#ruKuList.num"/></td>
         <td><s:property value="#ruKuList.rktotalprice"/></td>
-        <td><s:property value="#ruKuList.ck_id"/></td>
-        <td><s:property value="#ruKuList.ckadmin"/></td>
-        <td><s:property value="#ruKuList.ckadmin"/></td>
+        <td><s:property value="#ruKuList.tbCk.ckname"/></td>
         <td><a href="${pageContext.request.contextPath }/page/ruku_edit.action?id=<s:property value="#ruKuList.id"/>" class="click" id="">编辑</a>     <a href="${pageContext.request.contextPath }/page/ruku_delete.action?id=<s:property value="#ruKuList.id"/>" class="tablelink"> 删除</a></td>
         </tr> 
           </s:iterator>      

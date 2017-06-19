@@ -20,33 +20,33 @@ public class GysServiceImp implements GysService {
 	}
 
 	@Override
-	public void delete(Integer id) {
-		// TODO Auto-generated method stub
+	public void delete(String id) {
 		this.gysDao.delete(id);
 	}
 
 	@Override
 	public void update(TbGys tbGys) {
-		// TODO Auto-generated method stub
 		this.gysDao.update(tbGys);
 	}
 
 	@Override
 	public List queryPage(int currentPage, int pageSize) {
-		// TODO Auto-generated method stub
 		return this.gysDao.queryPage(currentPage, pageSize);
 	}
 
 	@Override
-	public List get(Integer id) {
-		// TODO Auto-generated method stub
+	public List get(String id) {
 		return this.gysDao.get(id);
 	}
 
 	@Override
 	public int getTotalSize() {
-		// TODO Auto-generated method stub
 		return this.gysDao.getTotalSize();
+	}
+
+	@Override
+	public List<TbGys> findAll() {
+		return this.gysDao.findAll();
 	}
 
 }

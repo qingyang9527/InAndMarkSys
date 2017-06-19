@@ -11,15 +11,18 @@
             <generator class="native" />
         </id>
         <many-to-one name="admin" class="com.hm.InAndMarkSys.model.Admin" fetch="select" lazy="false">
-            <column name="ckadmin">
-                <comment>仓库管理员</comment>
-            </column>
+            <column name="ckadmin" />
         </many-to-one>
         <many-to-one name="tbCk" class="com.hm.InAndMarkSys.model.TbCk" fetch="select" lazy="false">
             <column name="ck_id" />
         </many-to-one>
+        <property name="rukuid" type="java.lang.String">
+            <column name="rukuid">
+                <comment>入库单号</comment>
+            </column>
+        </property>
         <property name="rktime" type="java.sql.Timestamp">
-            <column name="rktime" length="0">
+            <column name="rktime" length="19">
                 <comment>入库时间</comment>
             </column>
         </property>

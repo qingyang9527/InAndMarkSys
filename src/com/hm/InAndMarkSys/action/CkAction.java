@@ -25,7 +25,6 @@ public class CkAction extends ActionSupport implements ModelDriven<TbCk>{
 	}
 	@Override
 	public TbCk getModel() {
-		// TODO Auto-generated method stub
 		return tbCk;
 	}
 	

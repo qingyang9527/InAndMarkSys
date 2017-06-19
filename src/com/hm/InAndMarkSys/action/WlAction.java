@@ -1,21 +1,35 @@
 package com.hm.InAndMarkSys.action;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
 import com.hm.InAndMarkSys.model.TbGys;
 import com.hm.InAndMarkSys.model.TbWl;
+import com.hm.InAndMarkSys.service.GysService;
 import com.hm.InAndMarkSys.service.WlService;
 import com.hm.InAndMarkSys.util.Pager;
 import com.opensymphony.xwork2.ActionContext;
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
+import com.sun.org.apache.bcel.internal.generic.NEW;
 
 public class WlAction extends ActionSupport implements ModelDriven<TbWl>{
 	private TbWl tbWl=new TbWl();
 	private WlService wlService;
 	private Integer currentPage=1;
+	private List<TbGys> gysList=new ArrayList<TbGys>();
+	private GysService gysService;
 	
+	public void setGysService(GysService gysService) {
+		this.gysService = gysService;
+	}
+	public List<TbGys> getGysList() {
+		return gysList;
+	}
+	public void setGysList(List<TbGys> gysList) {
+		this.gysList = gysList;
+	}
 	public Integer getCurrentPage() {
 		return currentPage;
 	}
@@ -30,7 +44,6 @@ public class WlAction extends ActionSupport implements ModelDriven<TbWl>{
 	}
 	@Override
 	public TbWl getModel() {
-		// TODO Auto-generated method stub
 		return tbWl;
 	}
 	
@@ -45,9 +58,11 @@ public class WlAction extends ActionSupport implements ModelDriven<TbWl>{
 	}
 	
 	public String edit() throws Exception{
+		gysList =gysService.findAll();
 		List list=wlService.getWlByWlId(tbWl.getWlid());
 		Map sessionMap=(Map) ActionContext.getContext().get("request");
 		sessionMap.put("EditList", list);
+//		sessionMap.put("gysList", gysList);
 		return "edit_success";
 	}
 	
@@ -62,6 +77,8 @@ public class WlAction extends ActionSupport implements ModelDriven<TbWl>{
 	}
 	
 	public String add() throws Exception{
+		
+		System.out.println(tbWl.getWlid());
 		this.wlService.save(tbWl);
 		return "add_success";
 	}

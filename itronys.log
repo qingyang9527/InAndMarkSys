@@ -2817,3 +2817,1502 @@ org.hibernate.LazyInitializationException: could not initialize proxy - no Sessi
 [INFO][2017-06-15 11:59:41,605][org.hibernate.type.IntegerType]could not read column value from result set: ckadmin2_; Invalid value for getInt() - 'admin'
 [WARN][2017-06-15 11:59:41,607][org.hibernate.util.JDBCExceptionReporter]SQL Error: 0, SQLState: S1009
 [ERROR][2017-06-15 11:59:41,607][org.hibernate.util.JDBCExceptionReporter]Invalid value for getInt() - 'admin'
+[INFO][2017-06-16 10:27:38,171][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@681e2ca7: startup date [Fri Jun 16 10:27:38 CST 2017]; root of context hierarchy
+[INFO][2017-06-16 10:27:38,221][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-06-16 10:27:38,404][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@25e222e: defining beans [dataSource,sessionFactory,transactionManager,baseDao,adminDaoImp,wlDaoImp,gysDaoImp,ckDaoImp,rukuDaoImp,adminServiceImp,wlServiceImp,gysServiceImp,ckServiceImp,rukuServiceImp,loginAction,wlAction,gysAction,ckAction,ruKuAction]; root of factory hierarchy
+[INFO][2017-06-16 10:27:38,505][org.hibernate.cfg.Environment]Hibernate 3.3.2.GA
+[INFO][2017-06-16 10:27:38,507][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2017-06-16 10:27:38,511][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2017-06-16 10:27:38,516][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2017-06-16 10:27:38,652][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCk -> tb_ck
+[INFO][2017-06-16 10:27:38,699][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.Admin -> admin
+[INFO][2017-06-16 10:27:38,734][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbRuku -> tb_ruku
+[INFO][2017-06-16 10:27:38,807][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbWl -> tb_wl
+[INFO][2017-06-16 10:27:38,848][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCgWl -> tb_cg_wl
+[INFO][2017-06-16 10:27:38,874][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCg -> tb_cg
+[INFO][2017-06-16 10:27:38,891][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXs -> tb_xs
+[INFO][2017-06-16 10:27:38,955][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbUser -> tb_user
+[INFO][2017-06-16 10:27:38,984][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXsRecord -> tb_xs_record
+[INFO][2017-06-16 10:27:39,027][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbGys -> tb_gys
+[INFO][2017-06-16 10:27:39,028][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCk.tbRukus -> tb_ruku
+[INFO][2017-06-16 10:27:39,030][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.Admin.tbRukus -> tb_ruku
+[INFO][2017-06-16 10:27:39,030][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 10:27:39,031][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 10:27:39,031][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCg.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 10:27:39,032][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbUser.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 10:27:39,032][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbXsRecord.tbXses -> tb_xs
+[INFO][2017-06-16 10:27:39,032][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbGys.tbWls -> tb_wl
+[INFO][2017-06-16 10:27:39,032][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2017-06-16 10:27:39,037][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2017-06-16 10:27:39,231][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.7.12-log
+[INFO][2017-06-16 10:27:39,231][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+[INFO][2017-06-16 10:27:39,254][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-06-16 10:27:39,260][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2017-06-16 10:27:39,262][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2017-06-16 10:27:39,262][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2017-06-16 10:27:39,262][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2017-06-16 10:27:39,262][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2017-06-16 10:27:39,263][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2017-06-16 10:27:39,263][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2017-06-16 10:27:39,264][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2017-06-16 10:27:39,264][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2017-06-16 10:27:39,265][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2017-06-16 10:27:39,265][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2017-06-16 10:27:39,265][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2017-06-16 10:27:39,265][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2017-06-16 10:27:39,265][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2017-06-16 10:27:39,265][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2017-06-16 10:27:39,266][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2017-06-16 10:27:39,267][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2017-06-16 10:27:39,267][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2017-06-16 10:27:39,267][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2017-06-16 10:27:39,267][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2017-06-16 10:27:39,267][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2017-06-16 10:27:39,267][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2017-06-16 10:27:39,268][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2017-06-16 10:27:39,270][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2017-06-16 10:27:39,271][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2017-06-16 10:27:39,271][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2017-06-16 10:27:39,271][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2017-06-16 10:27:39,271][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2017-06-16 10:27:39,301][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2017-06-16 10:27:39,487][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2017-06-16 10:27:39,507][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@49d29a78] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-06-16 10:27:43,224][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@59c9b9ca: startup date [Fri Jun 16 10:27:43 CST 2017]; root of context hierarchy
+[INFO][2017-06-16 10:27:43,264][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-06-16 10:27:43,418][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@704f459c: defining beans [dataSource,sessionFactory,transactionManager,baseDao,adminDaoImp,wlDaoImp,gysDaoImp,ckDaoImp,rukuDaoImp,adminServiceImp,wlServiceImp,gysServiceImp,ckServiceImp,rukuServiceImp,loginAction,wlAction,gysAction,ckAction,ruKuAction]; root of factory hierarchy
+[INFO][2017-06-16 10:27:43,504][org.hibernate.cfg.Environment]Hibernate 3.3.2.GA
+[INFO][2017-06-16 10:27:43,510][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2017-06-16 10:27:43,512][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2017-06-16 10:27:43,515][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2017-06-16 10:27:43,631][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCk -> tb_ck
+[INFO][2017-06-16 10:27:43,666][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.Admin -> admin
+[INFO][2017-06-16 10:27:43,699][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbRuku -> tb_ruku
+[INFO][2017-06-16 10:27:43,765][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbWl -> tb_wl
+[INFO][2017-06-16 10:27:43,805][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCgWl -> tb_cg_wl
+[INFO][2017-06-16 10:27:43,821][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCg -> tb_cg
+[INFO][2017-06-16 10:27:43,844][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXs -> tb_xs
+[INFO][2017-06-16 10:27:43,899][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbUser -> tb_user
+[INFO][2017-06-16 10:27:43,920][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXsRecord -> tb_xs_record
+[INFO][2017-06-16 10:27:43,968][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbGys -> tb_gys
+[INFO][2017-06-16 10:27:43,969][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCk.tbRukus -> tb_ruku
+[INFO][2017-06-16 10:27:43,970][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.Admin.tbRukus -> tb_ruku
+[INFO][2017-06-16 10:27:43,971][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 10:27:43,974][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 10:27:43,975][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCg.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 10:27:43,975][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbUser.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 10:27:43,975][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbXsRecord.tbXses -> tb_xs
+[INFO][2017-06-16 10:27:43,975][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbGys.tbWls -> tb_wl
+[INFO][2017-06-16 10:27:43,976][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2017-06-16 10:27:43,981][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2017-06-16 10:27:44,154][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.7.12-log
+[INFO][2017-06-16 10:27:44,154][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+[INFO][2017-06-16 10:27:44,172][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-06-16 10:27:44,174][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2017-06-16 10:27:44,176][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2017-06-16 10:27:44,176][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2017-06-16 10:27:44,177][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2017-06-16 10:27:44,177][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2017-06-16 10:27:44,177][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2017-06-16 10:27:44,178][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2017-06-16 10:27:44,178][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2017-06-16 10:27:44,178][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2017-06-16 10:27:44,179][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2017-06-16 10:27:44,180][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2017-06-16 10:27:44,180][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2017-06-16 10:27:44,180][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2017-06-16 10:27:44,181][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2017-06-16 10:27:44,181][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2017-06-16 10:27:44,182][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2017-06-16 10:27:44,182][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2017-06-16 10:27:44,182][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2017-06-16 10:27:44,182][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2017-06-16 10:27:44,183][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2017-06-16 10:27:44,183][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2017-06-16 10:27:44,183][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2017-06-16 10:27:44,183][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2017-06-16 10:27:44,185][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2017-06-16 10:27:44,186][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2017-06-16 10:27:44,186][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2017-06-16 10:27:44,186][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2017-06-16 10:27:44,186][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2017-06-16 10:27:44,209][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2017-06-16 10:27:44,375][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2017-06-16 10:27:44,392][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@6c91f005] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-06-16 15:25:48,049][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@59c9b9ca: startup date [Fri Jun 16 15:25:48 CST 2017]; root of context hierarchy
+[INFO][2017-06-16 15:25:48,095][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-06-16 15:25:48,269][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@704f459c: defining beans [dataSource,sessionFactory,transactionManager,baseDao,adminDaoImp,wlDaoImp,gysDaoImp,ckDaoImp,rukuDaoImp,adminServiceImp,wlServiceImp,gysServiceImp,ckServiceImp,rukuServiceImp,loginAction,wlAction,gysAction,ckAction,ruKuAction]; root of factory hierarchy
+[INFO][2017-06-16 15:25:48,366][org.hibernate.cfg.Environment]Hibernate 3.3.2.GA
+[INFO][2017-06-16 15:25:48,367][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2017-06-16 15:25:48,371][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2017-06-16 15:25:48,374][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2017-06-16 15:25:48,506][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbWl -> tb_wl
+[INFO][2017-06-16 15:25:48,575][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCgWl -> tb_cg_wl
+[INFO][2017-06-16 15:25:48,598][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCg -> tb_cg
+[INFO][2017-06-16 15:25:48,624][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXs -> tb_xs
+[INFO][2017-06-16 15:25:48,663][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbUser -> tb_user
+[INFO][2017-06-16 15:25:48,745][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXsRecord -> tb_xs_record
+[INFO][2017-06-16 15:25:48,774][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbGys -> tb_gys
+[INFO][2017-06-16 15:25:48,835][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCk -> tb_ck
+[INFO][2017-06-16 15:25:48,866][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.Admin -> admin
+[INFO][2017-06-16 15:25:48,898][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbRuku -> tb_ruku
+[INFO][2017-06-16 15:25:48,899][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 15:25:48,900][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 15:25:48,900][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCg.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 15:25:48,901][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbUser.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 15:25:48,901][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbXsRecord.tbXses -> tb_xs
+[INFO][2017-06-16 15:25:48,901][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbGys.tbWls -> tb_wl
+[INFO][2017-06-16 15:25:48,901][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCk.tbRukus -> tb_ruku
+[INFO][2017-06-16 15:25:48,901][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.Admin.tbRukus -> tb_ruku
+[INFO][2017-06-16 15:25:48,904][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2017-06-16 15:25:48,908][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2017-06-16 15:25:49,070][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.7.12-log
+[INFO][2017-06-16 15:25:49,070][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+[INFO][2017-06-16 15:25:49,090][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-06-16 15:25:49,093][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2017-06-16 15:25:49,095][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2017-06-16 15:25:49,095][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2017-06-16 15:25:49,096][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2017-06-16 15:25:49,097][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2017-06-16 15:25:49,097][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2017-06-16 15:25:49,098][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2017-06-16 15:25:49,098][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2017-06-16 15:25:49,098][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2017-06-16 15:25:49,098][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2017-06-16 15:25:49,099][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2017-06-16 15:25:49,099][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2017-06-16 15:25:49,099][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2017-06-16 15:25:49,099][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2017-06-16 15:25:49,099][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2017-06-16 15:25:49,100][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2017-06-16 15:25:49,101][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2017-06-16 15:25:49,101][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2017-06-16 15:25:49,101][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2017-06-16 15:25:49,101][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2017-06-16 15:25:49,102][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2017-06-16 15:25:49,102][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2017-06-16 15:25:49,102][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2017-06-16 15:25:49,107][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2017-06-16 15:25:49,107][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2017-06-16 15:25:49,107][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2017-06-16 15:25:49,107][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2017-06-16 15:25:49,108][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2017-06-16 15:25:49,135][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2017-06-16 15:25:49,303][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2017-06-16 15:25:49,321][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@61250ff2] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-06-16 15:26:45,155][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@59c9b9ca: startup date [Fri Jun 16 15:26:45 CST 2017]; root of context hierarchy
+[INFO][2017-06-16 15:26:45,200][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-06-16 15:26:45,403][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@10ad8659: defining beans [dataSource,sessionFactory,transactionManager,baseDao,adminDaoImp,wlDaoImp,gysDaoImp,ckDaoImp,rukuDaoImp,adminServiceImp,wlServiceImp,gysServiceImp,ckServiceImp,rukuServiceImp,loginAction,wlAction,gysAction,ckAction,ruKuAction]; root of factory hierarchy
+[INFO][2017-06-16 15:26:45,488][org.hibernate.cfg.Environment]Hibernate 3.3.2.GA
+[INFO][2017-06-16 15:26:45,496][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2017-06-16 15:26:45,499][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2017-06-16 15:26:45,501][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2017-06-16 15:26:45,629][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbWl -> tb_wl
+[INFO][2017-06-16 15:26:45,696][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCgWl -> tb_cg_wl
+[INFO][2017-06-16 15:26:45,717][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCg -> tb_cg
+[INFO][2017-06-16 15:26:45,742][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXs -> tb_xs
+[INFO][2017-06-16 15:26:45,786][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbUser -> tb_user
+[INFO][2017-06-16 15:26:45,849][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXsRecord -> tb_xs_record
+[INFO][2017-06-16 15:26:45,876][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbGys -> tb_gys
+[INFO][2017-06-16 15:26:45,935][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCk -> tb_ck
+[INFO][2017-06-16 15:26:45,946][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.Admin -> admin
+[INFO][2017-06-16 15:26:46,000][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbRuku -> tb_ruku
+[INFO][2017-06-16 15:26:46,001][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 15:26:46,001][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 15:26:46,002][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCg.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 15:26:46,002][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbUser.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 15:26:46,002][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbXsRecord.tbXses -> tb_xs
+[INFO][2017-06-16 15:26:46,002][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbGys.tbWls -> tb_wl
+[INFO][2017-06-16 15:26:46,002][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCk.tbRukus -> tb_ruku
+[INFO][2017-06-16 15:26:46,002][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.Admin.tbRukus -> tb_ruku
+[INFO][2017-06-16 15:26:46,003][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2017-06-16 15:26:46,006][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2017-06-16 15:26:46,161][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.7.12-log
+[INFO][2017-06-16 15:26:46,161][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+[INFO][2017-06-16 15:26:46,179][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-06-16 15:26:46,182][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2017-06-16 15:26:46,183][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2017-06-16 15:26:46,183][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2017-06-16 15:26:46,183][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2017-06-16 15:26:46,183][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2017-06-16 15:26:46,184][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2017-06-16 15:26:46,185][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2017-06-16 15:26:46,185][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2017-06-16 15:26:46,185][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2017-06-16 15:26:46,186][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2017-06-16 15:26:46,186][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2017-06-16 15:26:46,186][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2017-06-16 15:26:46,186][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2017-06-16 15:26:46,186][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2017-06-16 15:26:46,186][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2017-06-16 15:26:46,188][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2017-06-16 15:26:46,188][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2017-06-16 15:26:46,188][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2017-06-16 15:26:46,188][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2017-06-16 15:26:46,188][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2017-06-16 15:26:46,188][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2017-06-16 15:26:46,188][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2017-06-16 15:26:46,188][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2017-06-16 15:26:46,191][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2017-06-16 15:26:46,191][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2017-06-16 15:26:46,191][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2017-06-16 15:26:46,191][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2017-06-16 15:26:46,192][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2017-06-16 15:26:46,212][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2017-06-16 15:26:46,387][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2017-06-16 15:26:46,404][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@483a0ab1] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-06-16 15:26:46,598][org.hibernate.event.def.DefaultLoadEventListener]Error performing load command
+org.hibernate.ObjectNotFoundException: No row with the given identifier exists: [com.hm.InAndMarkSys.model.TbGys#3242]
+	at org.hibernate.impl.SessionFactoryImpl$2.handleEntityNotFound(SessionFactoryImpl.java:419)
+	at org.hibernate.event.def.DefaultLoadEventListener.load(DefaultLoadEventListener.java:171)
+	at org.hibernate.event.def.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:223)
+	at org.hibernate.event.def.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:126)
+	at org.hibernate.impl.SessionImpl.fireLoad(SessionImpl.java:906)
+	at org.hibernate.impl.SessionImpl.internalLoad(SessionImpl.java:874)
+	at org.hibernate.type.EntityType.resolveIdentifier(EntityType.java:590)
+	at org.hibernate.type.EntityType.resolve(EntityType.java:412)
+	at org.hibernate.engine.TwoPhaseLoad.initializeEntity(TwoPhaseLoad.java:139)
+	at org.hibernate.loader.Loader.initializeEntitiesAndCollections(Loader.java:877)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:752)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:259)
+	at org.hibernate.loader.Loader.doList(Loader.java:2232)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2129)
+	at org.hibernate.loader.Loader.list(Loader.java:2124)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:401)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:363)
+	at org.hibernate.engine.query.HQLQueryPlan.performList(HQLQueryPlan.java:196)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1149)
+	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
+	at com.hm.InAndMarkSys.dao.imp.WlDaoImp.getWlByWlId(WlDaoImp.java:44)
+	at com.hm.InAndMarkSys.test.DaoTest.main(DaoTest.java:36)
+[INFO][2017-06-16 15:28:17,171][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@78105738: startup date [Fri Jun 16 15:28:17 CST 2017]; root of context hierarchy
+[INFO][2017-06-16 15:28:17,215][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-06-16 15:28:17,418][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2f93c0cf: defining beans [dataSource,sessionFactory,transactionManager,baseDao,adminDaoImp,wlDaoImp,gysDaoImp,ckDaoImp,rukuDaoImp,adminServiceImp,wlServiceImp,gysServiceImp,ckServiceImp,rukuServiceImp,loginAction,wlAction,gysAction,ckAction,ruKuAction]; root of factory hierarchy
+[INFO][2017-06-16 15:28:17,507][org.hibernate.cfg.Environment]Hibernate 3.3.2.GA
+[INFO][2017-06-16 15:28:17,509][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2017-06-16 15:28:17,512][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2017-06-16 15:28:17,516][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2017-06-16 15:28:17,646][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbWl -> tb_wl
+[INFO][2017-06-16 15:28:17,713][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCgWl -> tb_cg_wl
+[INFO][2017-06-16 15:28:17,734][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCg -> tb_cg
+[INFO][2017-06-16 15:28:17,760][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXs -> tb_xs
+[INFO][2017-06-16 15:28:17,794][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbUser -> tb_user
+[INFO][2017-06-16 15:28:17,863][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXsRecord -> tb_xs_record
+[INFO][2017-06-16 15:28:17,890][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbGys -> tb_gys
+[INFO][2017-06-16 15:28:17,948][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCk -> tb_ck
+[INFO][2017-06-16 15:28:17,958][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.Admin -> admin
+[INFO][2017-06-16 15:28:18,000][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbRuku -> tb_ruku
+[INFO][2017-06-16 15:28:18,007][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 15:28:18,008][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 15:28:18,009][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCg.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 15:28:18,009][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbUser.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 15:28:18,009][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbXsRecord.tbXses -> tb_xs
+[INFO][2017-06-16 15:28:18,011][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbGys.tbWls -> tb_wl
+[INFO][2017-06-16 15:28:18,011][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCk.tbRukus -> tb_ruku
+[INFO][2017-06-16 15:28:18,011][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.Admin.tbRukus -> tb_ruku
+[INFO][2017-06-16 15:28:18,012][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2017-06-16 15:28:18,017][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2017-06-16 15:28:18,168][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.7.12-log
+[INFO][2017-06-16 15:28:18,169][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+[INFO][2017-06-16 15:28:18,190][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-06-16 15:28:18,192][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2017-06-16 15:28:18,193][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2017-06-16 15:28:18,193][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2017-06-16 15:28:18,193][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2017-06-16 15:28:18,193][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2017-06-16 15:28:18,194][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2017-06-16 15:28:18,194][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2017-06-16 15:28:18,194][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2017-06-16 15:28:18,194][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2017-06-16 15:28:18,195][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2017-06-16 15:28:18,195][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2017-06-16 15:28:18,195][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2017-06-16 15:28:18,196][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2017-06-16 15:28:18,196][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2017-06-16 15:28:18,196][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2017-06-16 15:28:18,199][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2017-06-16 15:28:18,199][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2017-06-16 15:28:18,199][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2017-06-16 15:28:18,199][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2017-06-16 15:28:18,199][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2017-06-16 15:28:18,199][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2017-06-16 15:28:18,199][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2017-06-16 15:28:18,199][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2017-06-16 15:28:18,202][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2017-06-16 15:28:18,202][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2017-06-16 15:28:18,202][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2017-06-16 15:28:18,203][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2017-06-16 15:28:18,203][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2017-06-16 15:28:18,225][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2017-06-16 15:28:18,391][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2017-06-16 15:28:18,409][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@61250ff2] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-06-16 15:28:18,602][org.hibernate.event.def.DefaultLoadEventListener]Error performing load command
+org.hibernate.ObjectNotFoundException: No row with the given identifier exists: [com.hm.InAndMarkSys.model.TbGys#3242]
+	at org.hibernate.impl.SessionFactoryImpl$2.handleEntityNotFound(SessionFactoryImpl.java:419)
+	at org.hibernate.event.def.DefaultLoadEventListener.load(DefaultLoadEventListener.java:171)
+	at org.hibernate.event.def.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:223)
+	at org.hibernate.event.def.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:126)
+	at org.hibernate.impl.SessionImpl.fireLoad(SessionImpl.java:906)
+	at org.hibernate.impl.SessionImpl.internalLoad(SessionImpl.java:874)
+	at org.hibernate.type.EntityType.resolveIdentifier(EntityType.java:590)
+	at org.hibernate.type.EntityType.resolve(EntityType.java:412)
+	at org.hibernate.engine.TwoPhaseLoad.initializeEntity(TwoPhaseLoad.java:139)
+	at org.hibernate.loader.Loader.initializeEntitiesAndCollections(Loader.java:877)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:752)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:259)
+	at org.hibernate.loader.Loader.doList(Loader.java:2232)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2129)
+	at org.hibernate.loader.Loader.list(Loader.java:2124)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:401)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:363)
+	at org.hibernate.engine.query.HQLQueryPlan.performList(HQLQueryPlan.java:196)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1149)
+	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
+	at com.hm.InAndMarkSys.dao.imp.WlDaoImp.queryWlByPager(WlDaoImp.java:32)
+	at com.hm.InAndMarkSys.test.DaoTest.main(DaoTest.java:36)
+[INFO][2017-06-16 15:29:00,497][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4ac4aad3: startup date [Fri Jun 16 15:29:00 CST 2017]; root of context hierarchy
+[INFO][2017-06-16 15:29:00,542][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-06-16 15:29:00,732][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@64633e5e: defining beans [dataSource,sessionFactory,transactionManager,baseDao,adminDaoImp,wlDaoImp,gysDaoImp,ckDaoImp,rukuDaoImp,adminServiceImp,wlServiceImp,gysServiceImp,ckServiceImp,rukuServiceImp,loginAction,wlAction,gysAction,ckAction,ruKuAction]; root of factory hierarchy
+[INFO][2017-06-16 15:29:00,821][org.hibernate.cfg.Environment]Hibernate 3.3.2.GA
+[INFO][2017-06-16 15:29:00,828][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2017-06-16 15:29:00,831][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2017-06-16 15:29:00,834][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2017-06-16 15:29:00,996][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbWl -> tb_wl
+[INFO][2017-06-16 15:29:01,079][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCgWl -> tb_cg_wl
+[INFO][2017-06-16 15:29:01,104][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCg -> tb_cg
+[INFO][2017-06-16 15:29:01,138][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXs -> tb_xs
+[INFO][2017-06-16 15:29:01,180][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbUser -> tb_user
+[INFO][2017-06-16 15:29:01,247][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXsRecord -> tb_xs_record
+[INFO][2017-06-16 15:29:01,282][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbGys -> tb_gys
+[INFO][2017-06-16 15:29:01,341][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCk -> tb_ck
+[INFO][2017-06-16 15:29:01,353][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.Admin -> admin
+[INFO][2017-06-16 15:29:01,398][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbRuku -> tb_ruku
+[INFO][2017-06-16 15:29:01,400][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 15:29:01,400][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 15:29:01,401][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCg.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 15:29:01,401][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbUser.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 15:29:01,401][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbXsRecord.tbXses -> tb_xs
+[INFO][2017-06-16 15:29:01,401][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbGys.tbWls -> tb_wl
+[INFO][2017-06-16 15:29:01,402][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCk.tbRukus -> tb_ruku
+[INFO][2017-06-16 15:29:01,402][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.Admin.tbRukus -> tb_ruku
+[INFO][2017-06-16 15:29:01,402][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2017-06-16 15:29:01,406][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2017-06-16 15:29:01,570][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.7.12-log
+[INFO][2017-06-16 15:29:01,571][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+[INFO][2017-06-16 15:29:01,591][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-06-16 15:29:01,594][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2017-06-16 15:29:01,596][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2017-06-16 15:29:01,596][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2017-06-16 15:29:01,596][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2017-06-16 15:29:01,596][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2017-06-16 15:29:01,596][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2017-06-16 15:29:01,597][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2017-06-16 15:29:01,597][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2017-06-16 15:29:01,598][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2017-06-16 15:29:01,598][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2017-06-16 15:29:01,599][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2017-06-16 15:29:01,599][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2017-06-16 15:29:01,599][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2017-06-16 15:29:01,599][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2017-06-16 15:29:01,599][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2017-06-16 15:29:01,601][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2017-06-16 15:29:01,601][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2017-06-16 15:29:01,601][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2017-06-16 15:29:01,602][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2017-06-16 15:29:01,602][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2017-06-16 15:29:01,602][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2017-06-16 15:29:01,602][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2017-06-16 15:29:01,603][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2017-06-16 15:29:01,607][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2017-06-16 15:29:01,608][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2017-06-16 15:29:01,608][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2017-06-16 15:29:01,609][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2017-06-16 15:29:01,609][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2017-06-16 15:29:01,636][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2017-06-16 15:29:01,814][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2017-06-16 15:29:01,833][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@61250ff2] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-06-16 15:29:02,031][org.hibernate.event.def.DefaultLoadEventListener]Error performing load command
+org.hibernate.ObjectNotFoundException: No row with the given identifier exists: [com.hm.InAndMarkSys.model.TbGys#3242]
+	at org.hibernate.impl.SessionFactoryImpl$2.handleEntityNotFound(SessionFactoryImpl.java:419)
+	at org.hibernate.event.def.DefaultLoadEventListener.load(DefaultLoadEventListener.java:171)
+	at org.hibernate.event.def.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:223)
+	at org.hibernate.event.def.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:126)
+	at org.hibernate.impl.SessionImpl.fireLoad(SessionImpl.java:906)
+	at org.hibernate.impl.SessionImpl.internalLoad(SessionImpl.java:874)
+	at org.hibernate.type.EntityType.resolveIdentifier(EntityType.java:590)
+	at org.hibernate.type.EntityType.resolve(EntityType.java:412)
+	at org.hibernate.engine.TwoPhaseLoad.initializeEntity(TwoPhaseLoad.java:139)
+	at org.hibernate.loader.Loader.initializeEntitiesAndCollections(Loader.java:877)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:752)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:259)
+	at org.hibernate.loader.Loader.doList(Loader.java:2232)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2129)
+	at org.hibernate.loader.Loader.list(Loader.java:2124)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:401)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:363)
+	at org.hibernate.engine.query.HQLQueryPlan.performList(HQLQueryPlan.java:196)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1149)
+	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
+	at com.hm.InAndMarkSys.dao.imp.WlDaoImp.queryWlByPager(WlDaoImp.java:32)
+	at com.hm.InAndMarkSys.test.DaoTest.main(DaoTest.java:36)
+[INFO][2017-06-16 15:36:38,038][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@35ab28fe: startup date [Fri Jun 16 15:36:38 CST 2017]; root of context hierarchy
+[INFO][2017-06-16 15:36:38,081][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-06-16 15:36:38,248][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@64633e5e: defining beans [dataSource,sessionFactory,transactionManager,baseDao,adminDaoImp,wlDaoImp,gysDaoImp,ckDaoImp,rukuDaoImp,adminServiceImp,wlServiceImp,gysServiceImp,ckServiceImp,rukuServiceImp,loginAction,wlAction,gysAction,ckAction,ruKuAction]; root of factory hierarchy
+[INFO][2017-06-16 15:36:38,349][org.hibernate.cfg.Environment]Hibernate 3.3.2.GA
+[INFO][2017-06-16 15:36:38,353][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2017-06-16 15:36:38,355][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2017-06-16 15:36:38,358][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2017-06-16 15:36:38,485][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbWl -> tb_wl
+[INFO][2017-06-16 15:36:38,558][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCgWl -> tb_cg_wl
+[INFO][2017-06-16 15:36:38,579][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCg -> tb_cg
+[INFO][2017-06-16 15:36:38,606][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXs -> tb_xs
+[INFO][2017-06-16 15:36:38,641][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbUser -> tb_user
+[INFO][2017-06-16 15:36:38,711][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXsRecord -> tb_xs_record
+[INFO][2017-06-16 15:36:38,738][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbGys -> tb_gys
+[INFO][2017-06-16 15:36:38,800][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCk -> tb_ck
+[INFO][2017-06-16 15:36:38,811][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.Admin -> admin
+[INFO][2017-06-16 15:36:38,858][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbRuku -> tb_ruku
+[INFO][2017-06-16 15:36:38,859][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 15:36:38,860][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 15:36:38,860][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCg.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 15:36:38,860][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbUser.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 15:36:38,860][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbXsRecord.tbXses -> tb_xs
+[INFO][2017-06-16 15:36:38,860][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbGys.tbWls -> tb_wl
+[INFO][2017-06-16 15:36:38,860][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCk.tbRukus -> tb_ruku
+[INFO][2017-06-16 15:36:38,861][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.Admin.tbRukus -> tb_ruku
+[INFO][2017-06-16 15:36:38,861][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2017-06-16 15:36:38,865][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2017-06-16 15:36:39,020][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.7.12-log
+[INFO][2017-06-16 15:36:39,020][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+[INFO][2017-06-16 15:36:39,038][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-06-16 15:36:39,042][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2017-06-16 15:36:39,043][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2017-06-16 15:36:39,043][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2017-06-16 15:36:39,043][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2017-06-16 15:36:39,043][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2017-06-16 15:36:39,043][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2017-06-16 15:36:39,044][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2017-06-16 15:36:39,044][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2017-06-16 15:36:39,044][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2017-06-16 15:36:39,044][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2017-06-16 15:36:39,045][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2017-06-16 15:36:39,045][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2017-06-16 15:36:39,045][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2017-06-16 15:36:39,045][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2017-06-16 15:36:39,045][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2017-06-16 15:36:39,047][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2017-06-16 15:36:39,047][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2017-06-16 15:36:39,047][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2017-06-16 15:36:39,047][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2017-06-16 15:36:39,047][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2017-06-16 15:36:39,047][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2017-06-16 15:36:39,047][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2017-06-16 15:36:39,047][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2017-06-16 15:36:39,049][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2017-06-16 15:36:39,050][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2017-06-16 15:36:39,050][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2017-06-16 15:36:39,050][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2017-06-16 15:36:39,050][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2017-06-16 15:36:39,073][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2017-06-16 15:36:39,303][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2017-06-16 15:36:39,325][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@61250ff2] of Hibernate SessionFactory for HibernateTransactionManager
+[ERROR][2017-06-16 15:36:39,521][org.hibernate.LazyInitializationException]could not initialize proxy - no Session
+org.hibernate.LazyInitializationException: could not initialize proxy - no Session
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:132)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:174)
+	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.invoke(JavassistLazyInitializer.java:190)
+	at com.hm.InAndMarkSys.model.TbGys_$$_javassist_9.getGysAddress(TbGys_$$_javassist_9.java)
+	at com.hm.InAndMarkSys.test.DaoTest.main(DaoTest.java:38)
+[INFO][2017-06-16 15:37:06,360][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@59c9b9ca: startup date [Fri Jun 16 15:37:06 CST 2017]; root of context hierarchy
+[INFO][2017-06-16 15:37:06,402][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-06-16 15:37:06,562][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2f93c0cf: defining beans [dataSource,sessionFactory,transactionManager,baseDao,adminDaoImp,wlDaoImp,gysDaoImp,ckDaoImp,rukuDaoImp,adminServiceImp,wlServiceImp,gysServiceImp,ckServiceImp,rukuServiceImp,loginAction,wlAction,gysAction,ckAction,ruKuAction]; root of factory hierarchy
+[INFO][2017-06-16 15:37:06,650][org.hibernate.cfg.Environment]Hibernate 3.3.2.GA
+[INFO][2017-06-16 15:37:06,655][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2017-06-16 15:37:06,658][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2017-06-16 15:37:06,660][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2017-06-16 15:37:06,792][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbWl -> tb_wl
+[INFO][2017-06-16 15:37:06,859][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCgWl -> tb_cg_wl
+[INFO][2017-06-16 15:37:06,879][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCg -> tb_cg
+[INFO][2017-06-16 15:37:06,905][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXs -> tb_xs
+[INFO][2017-06-16 15:37:06,951][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbUser -> tb_user
+[INFO][2017-06-16 15:37:07,010][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXsRecord -> tb_xs_record
+[INFO][2017-06-16 15:37:07,041][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbGys -> tb_gys
+[INFO][2017-06-16 15:37:07,094][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCk -> tb_ck
+[INFO][2017-06-16 15:37:07,109][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.Admin -> admin
+[INFO][2017-06-16 15:37:07,148][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbRuku -> tb_ruku
+[INFO][2017-06-16 15:37:07,150][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 15:37:07,153][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 15:37:07,153][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCg.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 15:37:07,153][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbUser.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 15:37:07,153][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbXsRecord.tbXses -> tb_xs
+[INFO][2017-06-16 15:37:07,154][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbGys.tbWls -> tb_wl
+[INFO][2017-06-16 15:37:07,154][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCk.tbRukus -> tb_ruku
+[INFO][2017-06-16 15:37:07,154][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.Admin.tbRukus -> tb_ruku
+[INFO][2017-06-16 15:37:07,154][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2017-06-16 15:37:07,157][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2017-06-16 15:37:07,307][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.7.12-log
+[INFO][2017-06-16 15:37:07,307][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+[INFO][2017-06-16 15:37:07,327][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-06-16 15:37:07,329][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2017-06-16 15:37:07,330][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2017-06-16 15:37:07,330][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2017-06-16 15:37:07,330][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2017-06-16 15:37:07,330][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2017-06-16 15:37:07,331][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2017-06-16 15:37:07,332][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2017-06-16 15:37:07,332][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2017-06-16 15:37:07,333][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2017-06-16 15:37:07,334][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2017-06-16 15:37:07,334][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2017-06-16 15:37:07,334][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2017-06-16 15:37:07,334][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2017-06-16 15:37:07,334][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2017-06-16 15:37:07,334][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2017-06-16 15:37:07,336][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2017-06-16 15:37:07,336][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2017-06-16 15:37:07,336][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2017-06-16 15:37:07,336][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2017-06-16 15:37:07,336][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2017-06-16 15:37:07,336][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2017-06-16 15:37:07,336][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2017-06-16 15:37:07,336][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2017-06-16 15:37:07,339][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2017-06-16 15:37:07,339][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2017-06-16 15:37:07,339][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2017-06-16 15:37:07,340][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2017-06-16 15:37:07,340][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2017-06-16 15:37:07,362][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2017-06-16 15:37:07,528][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2017-06-16 15:37:07,546][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@61250ff2] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-06-16 15:37:07,744][org.hibernate.event.def.DefaultLoadEventListener]Error performing load command
+org.hibernate.ObjectNotFoundException: No row with the given identifier exists: [com.hm.InAndMarkSys.model.TbGys#3124]
+	at org.hibernate.impl.SessionFactoryImpl$2.handleEntityNotFound(SessionFactoryImpl.java:419)
+	at org.hibernate.event.def.DefaultLoadEventListener.load(DefaultLoadEventListener.java:171)
+	at org.hibernate.event.def.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:223)
+	at org.hibernate.event.def.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:126)
+	at org.hibernate.impl.SessionImpl.fireLoad(SessionImpl.java:906)
+	at org.hibernate.impl.SessionImpl.internalLoad(SessionImpl.java:874)
+	at org.hibernate.type.EntityType.resolveIdentifier(EntityType.java:590)
+	at org.hibernate.type.EntityType.resolve(EntityType.java:412)
+	at org.hibernate.engine.TwoPhaseLoad.initializeEntity(TwoPhaseLoad.java:139)
+	at org.hibernate.loader.Loader.initializeEntitiesAndCollections(Loader.java:877)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:752)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:259)
+	at org.hibernate.loader.Loader.doList(Loader.java:2232)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2129)
+	at org.hibernate.loader.Loader.list(Loader.java:2124)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:401)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:363)
+	at org.hibernate.engine.query.HQLQueryPlan.performList(HQLQueryPlan.java:196)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1149)
+	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
+	at com.hm.InAndMarkSys.dao.imp.WlDaoImp.queryWlByPager(WlDaoImp.java:32)
+	at com.hm.InAndMarkSys.test.DaoTest.main(DaoTest.java:36)
+[INFO][2017-06-16 15:40:52,451][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@35ab28fe: startup date [Fri Jun 16 15:40:52 CST 2017]; root of context hierarchy
+[INFO][2017-06-16 15:40:52,492][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-06-16 15:40:52,657][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@64633e5e: defining beans [dataSource,sessionFactory,transactionManager,baseDao,adminDaoImp,wlDaoImp,gysDaoImp,ckDaoImp,rukuDaoImp,adminServiceImp,wlServiceImp,gysServiceImp,ckServiceImp,rukuServiceImp,loginAction,wlAction,gysAction,ckAction,ruKuAction]; root of factory hierarchy
+[INFO][2017-06-16 15:40:52,743][org.hibernate.cfg.Environment]Hibernate 3.3.2.GA
+[INFO][2017-06-16 15:40:52,749][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2017-06-16 15:40:52,752][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2017-06-16 15:40:52,755][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2017-06-16 15:40:52,882][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbWl -> tb_wl
+[INFO][2017-06-16 15:40:52,947][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCgWl -> tb_cg_wl
+[INFO][2017-06-16 15:40:52,970][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCg -> tb_cg
+[INFO][2017-06-16 15:40:52,995][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXs -> tb_xs
+[INFO][2017-06-16 15:40:53,042][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbUser -> tb_user
+[INFO][2017-06-16 15:40:53,102][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXsRecord -> tb_xs_record
+[INFO][2017-06-16 15:40:53,128][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbGys -> tb_gys
+[INFO][2017-06-16 15:40:53,189][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCk -> tb_ck
+[INFO][2017-06-16 15:40:53,207][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.Admin -> admin
+[INFO][2017-06-16 15:40:53,242][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbRuku -> tb_ruku
+[INFO][2017-06-16 15:40:53,250][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 15:40:53,252][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 15:40:53,252][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCg.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 15:40:53,252][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbUser.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 15:40:53,252][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbXsRecord.tbXses -> tb_xs
+[INFO][2017-06-16 15:40:53,253][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbGys.tbWls -> tb_wl
+[INFO][2017-06-16 15:40:53,253][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCk.tbRukus -> tb_ruku
+[INFO][2017-06-16 15:40:53,253][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.Admin.tbRukus -> tb_ruku
+[INFO][2017-06-16 15:40:53,253][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2017-06-16 15:40:53,259][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2017-06-16 15:40:53,409][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.7.12-log
+[INFO][2017-06-16 15:40:53,409][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+[INFO][2017-06-16 15:40:53,430][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-06-16 15:40:53,432][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2017-06-16 15:40:53,433][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2017-06-16 15:40:53,433][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2017-06-16 15:40:53,433][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2017-06-16 15:40:53,433][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2017-06-16 15:40:53,433][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2017-06-16 15:40:53,435][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2017-06-16 15:40:53,435][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2017-06-16 15:40:53,435][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2017-06-16 15:40:53,437][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2017-06-16 15:40:53,437][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2017-06-16 15:40:53,437][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2017-06-16 15:40:53,437][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2017-06-16 15:40:53,438][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2017-06-16 15:40:53,438][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2017-06-16 15:40:53,440][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2017-06-16 15:40:53,440][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2017-06-16 15:40:53,440][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2017-06-16 15:40:53,441][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2017-06-16 15:40:53,441][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2017-06-16 15:40:53,441][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2017-06-16 15:40:53,441][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2017-06-16 15:40:53,441][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2017-06-16 15:40:53,443][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2017-06-16 15:40:53,444][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2017-06-16 15:40:53,444][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2017-06-16 15:40:53,444][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2017-06-16 15:40:53,444][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2017-06-16 15:40:53,469][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2017-06-16 15:40:53,634][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2017-06-16 15:40:53,654][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@737c2891] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-06-16 15:40:53,846][org.hibernate.event.def.DefaultLoadEventListener]Error performing load command
+org.hibernate.ObjectNotFoundException: No row with the given identifier exists: [com.hm.InAndMarkSys.model.TbGys#3124]
+	at org.hibernate.impl.SessionFactoryImpl$2.handleEntityNotFound(SessionFactoryImpl.java:419)
+	at org.hibernate.event.def.DefaultLoadEventListener.load(DefaultLoadEventListener.java:171)
+	at org.hibernate.event.def.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:223)
+	at org.hibernate.event.def.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:126)
+	at org.hibernate.impl.SessionImpl.fireLoad(SessionImpl.java:906)
+	at org.hibernate.impl.SessionImpl.internalLoad(SessionImpl.java:874)
+	at org.hibernate.type.EntityType.resolveIdentifier(EntityType.java:590)
+	at org.hibernate.type.EntityType.resolve(EntityType.java:412)
+	at org.hibernate.engine.TwoPhaseLoad.initializeEntity(TwoPhaseLoad.java:139)
+	at org.hibernate.loader.Loader.initializeEntitiesAndCollections(Loader.java:877)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:752)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:259)
+	at org.hibernate.loader.Loader.doList(Loader.java:2232)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2129)
+	at org.hibernate.loader.Loader.list(Loader.java:2124)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:401)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:363)
+	at org.hibernate.engine.query.HQLQueryPlan.performList(HQLQueryPlan.java:196)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1149)
+	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
+	at com.hm.InAndMarkSys.dao.imp.WlDaoImp.queryWlByPager(WlDaoImp.java:32)
+	at com.hm.InAndMarkSys.test.DaoTest.main(DaoTest.java:36)
+[INFO][2017-06-16 15:44:52,646][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@35ab28fe: startup date [Fri Jun 16 15:44:52 CST 2017]; root of context hierarchy
+[INFO][2017-06-16 15:44:52,693][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-06-16 15:44:52,873][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@64633e5e: defining beans [dataSource,sessionFactory,transactionManager,baseDao,adminDaoImp,wlDaoImp,gysDaoImp,ckDaoImp,rukuDaoImp,adminServiceImp,wlServiceImp,gysServiceImp,ckServiceImp,rukuServiceImp,loginAction,wlAction,gysAction,ckAction,ruKuAction]; root of factory hierarchy
+[INFO][2017-06-16 15:44:52,968][org.hibernate.cfg.Environment]Hibernate 3.3.2.GA
+[INFO][2017-06-16 15:44:52,973][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2017-06-16 15:44:52,975][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2017-06-16 15:44:52,980][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2017-06-16 15:44:53,113][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbWl -> tb_wl
+[INFO][2017-06-16 15:44:53,183][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCgWl -> tb_cg_wl
+[INFO][2017-06-16 15:44:53,205][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCg -> tb_cg
+[INFO][2017-06-16 15:44:53,231][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXs -> tb_xs
+[INFO][2017-06-16 15:44:53,268][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbUser -> tb_user
+[INFO][2017-06-16 15:44:53,340][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXsRecord -> tb_xs_record
+[INFO][2017-06-16 15:44:53,375][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbGys -> tb_gys
+[INFO][2017-06-16 15:44:53,513][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCk -> tb_ck
+[INFO][2017-06-16 15:44:53,523][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.Admin -> admin
+[INFO][2017-06-16 15:44:53,544][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbRuku -> tb_ruku
+[INFO][2017-06-16 15:44:53,546][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 15:44:53,546][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 15:44:53,547][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCg.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 15:44:53,547][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbUser.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 15:44:53,548][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbXsRecord.tbXses -> tb_xs
+[INFO][2017-06-16 15:44:53,548][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbGys.tbWls -> tb_wl
+[INFO][2017-06-16 15:44:53,549][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCk.tbRukus -> tb_ruku
+[INFO][2017-06-16 15:44:53,549][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.Admin.tbRukus -> tb_ruku
+[INFO][2017-06-16 15:44:53,550][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2017-06-16 15:44:53,555][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2017-06-16 15:44:53,723][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.7.12-log
+[INFO][2017-06-16 15:44:53,723][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+[INFO][2017-06-16 15:44:53,741][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-06-16 15:44:53,746][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2017-06-16 15:44:53,747][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2017-06-16 15:44:53,748][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2017-06-16 15:44:53,748][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2017-06-16 15:44:53,748][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2017-06-16 15:44:53,748][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2017-06-16 15:44:53,749][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2017-06-16 15:44:53,749][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2017-06-16 15:44:53,749][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2017-06-16 15:44:53,750][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2017-06-16 15:44:53,750][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2017-06-16 15:44:53,750][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2017-06-16 15:44:53,751][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2017-06-16 15:44:53,751][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2017-06-16 15:44:53,751][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2017-06-16 15:44:53,752][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2017-06-16 15:44:53,753][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2017-06-16 15:44:53,753][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2017-06-16 15:44:53,753][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2017-06-16 15:44:53,753][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2017-06-16 15:44:53,754][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2017-06-16 15:44:53,754][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2017-06-16 15:44:53,754][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2017-06-16 15:44:53,756][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2017-06-16 15:44:53,757][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2017-06-16 15:44:53,757][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2017-06-16 15:44:53,757][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2017-06-16 15:44:53,757][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2017-06-16 15:44:53,783][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2017-06-16 15:44:53,953][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2017-06-16 15:44:53,971][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@61250ff2] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-06-16 15:44:54,164][org.hibernate.event.def.DefaultLoadEventListener]Error performing load command
+org.hibernate.ObjectNotFoundException: No row with the given identifier exists: [com.hm.InAndMarkSys.model.TbGys#3242]
+	at org.hibernate.impl.SessionFactoryImpl$2.handleEntityNotFound(SessionFactoryImpl.java:419)
+	at org.hibernate.event.def.DefaultLoadEventListener.load(DefaultLoadEventListener.java:171)
+	at org.hibernate.event.def.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:223)
+	at org.hibernate.event.def.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:126)
+	at org.hibernate.impl.SessionImpl.fireLoad(SessionImpl.java:906)
+	at org.hibernate.impl.SessionImpl.internalLoad(SessionImpl.java:874)
+	at org.hibernate.type.EntityType.resolveIdentifier(EntityType.java:590)
+	at org.hibernate.type.EntityType.resolve(EntityType.java:412)
+	at org.hibernate.engine.TwoPhaseLoad.initializeEntity(TwoPhaseLoad.java:139)
+	at org.hibernate.loader.Loader.initializeEntitiesAndCollections(Loader.java:877)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:752)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:259)
+	at org.hibernate.loader.Loader.doList(Loader.java:2232)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2129)
+	at org.hibernate.loader.Loader.list(Loader.java:2124)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:401)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:363)
+	at org.hibernate.engine.query.HQLQueryPlan.performList(HQLQueryPlan.java:196)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1149)
+	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
+	at com.hm.InAndMarkSys.dao.imp.WlDaoImp.queryWlByPager(WlDaoImp.java:32)
+	at com.hm.InAndMarkSys.test.DaoTest.main(DaoTest.java:36)
+[INFO][2017-06-16 15:45:36,956][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@59c9b9ca: startup date [Fri Jun 16 15:45:36 CST 2017]; root of context hierarchy
+[INFO][2017-06-16 15:45:37,027][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-06-16 15:45:37,264][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@10ad8659: defining beans [dataSource,sessionFactory,transactionManager,baseDao,adminDaoImp,wlDaoImp,gysDaoImp,ckDaoImp,rukuDaoImp,adminServiceImp,wlServiceImp,gysServiceImp,ckServiceImp,rukuServiceImp,loginAction,wlAction,gysAction,ckAction,ruKuAction]; root of factory hierarchy
+[INFO][2017-06-16 15:45:37,374][org.hibernate.cfg.Environment]Hibernate 3.3.2.GA
+[INFO][2017-06-16 15:45:37,377][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2017-06-16 15:45:37,380][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2017-06-16 15:45:37,385][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2017-06-16 15:45:37,505][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbWl -> tb_wl
+[INFO][2017-06-16 15:45:37,572][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCgWl -> tb_cg_wl
+[INFO][2017-06-16 15:45:37,592][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCg -> tb_cg
+[INFO][2017-06-16 15:45:37,620][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXs -> tb_xs
+[INFO][2017-06-16 15:45:37,656][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbUser -> tb_user
+[INFO][2017-06-16 15:45:37,719][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXsRecord -> tb_xs_record
+[INFO][2017-06-16 15:45:37,750][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbGys -> tb_gys
+[INFO][2017-06-16 15:45:37,809][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCk -> tb_ck
+[INFO][2017-06-16 15:45:37,819][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.Admin -> admin
+[INFO][2017-06-16 15:45:37,862][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbRuku -> tb_ruku
+[INFO][2017-06-16 15:45:37,863][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 15:45:37,864][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 15:45:37,864][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCg.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 15:45:37,864][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbUser.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 15:45:37,864][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbXsRecord.tbXses -> tb_xs
+[INFO][2017-06-16 15:45:37,864][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbGys.tbWls -> tb_wl
+[INFO][2017-06-16 15:45:37,865][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCk.tbRukus -> tb_ruku
+[INFO][2017-06-16 15:45:37,865][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.Admin.tbRukus -> tb_ruku
+[INFO][2017-06-16 15:45:37,865][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2017-06-16 15:45:37,870][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2017-06-16 15:45:38,033][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.7.12-log
+[INFO][2017-06-16 15:45:38,033][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+[INFO][2017-06-16 15:45:38,050][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-06-16 15:45:38,061][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2017-06-16 15:45:38,062][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2017-06-16 15:45:38,063][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2017-06-16 15:45:38,063][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2017-06-16 15:45:38,063][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2017-06-16 15:45:38,063][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2017-06-16 15:45:38,064][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2017-06-16 15:45:38,064][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2017-06-16 15:45:38,064][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2017-06-16 15:45:38,065][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2017-06-16 15:45:38,065][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2017-06-16 15:45:38,065][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2017-06-16 15:45:38,065][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2017-06-16 15:45:38,065][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2017-06-16 15:45:38,065][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2017-06-16 15:45:38,067][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2017-06-16 15:45:38,067][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2017-06-16 15:45:38,067][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2017-06-16 15:45:38,067][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2017-06-16 15:45:38,067][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2017-06-16 15:45:38,067][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2017-06-16 15:45:38,068][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2017-06-16 15:45:38,068][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2017-06-16 15:45:38,072][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2017-06-16 15:45:38,073][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2017-06-16 15:45:38,073][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2017-06-16 15:45:38,073][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2017-06-16 15:45:38,073][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2017-06-16 15:45:38,099][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2017-06-16 15:45:38,258][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2017-06-16 15:45:38,277][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@5a940f82] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-06-16 15:45:38,469][org.hibernate.event.def.DefaultLoadEventListener]Error performing load command
+org.hibernate.ObjectNotFoundException: No row with the given identifier exists: [com.hm.InAndMarkSys.model.TbGys#3242]
+	at org.hibernate.impl.SessionFactoryImpl$2.handleEntityNotFound(SessionFactoryImpl.java:419)
+	at org.hibernate.event.def.DefaultLoadEventListener.load(DefaultLoadEventListener.java:171)
+	at org.hibernate.event.def.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:223)
+	at org.hibernate.event.def.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:126)
+	at org.hibernate.impl.SessionImpl.fireLoad(SessionImpl.java:906)
+	at org.hibernate.impl.SessionImpl.internalLoad(SessionImpl.java:874)
+	at org.hibernate.type.EntityType.resolveIdentifier(EntityType.java:590)
+	at org.hibernate.type.EntityType.resolve(EntityType.java:412)
+	at org.hibernate.engine.TwoPhaseLoad.initializeEntity(TwoPhaseLoad.java:139)
+	at org.hibernate.loader.Loader.initializeEntitiesAndCollections(Loader.java:877)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:752)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:259)
+	at org.hibernate.loader.Loader.doList(Loader.java:2232)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2129)
+	at org.hibernate.loader.Loader.list(Loader.java:2124)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:401)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:363)
+	at org.hibernate.engine.query.HQLQueryPlan.performList(HQLQueryPlan.java:196)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1149)
+	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
+	at com.hm.InAndMarkSys.dao.imp.WlDaoImp.queryWlByPager(WlDaoImp.java:32)
+	at com.hm.InAndMarkSys.test.DaoTest.main(DaoTest.java:36)
+[INFO][2017-06-16 15:46:59,216][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@35ab28fe: startup date [Fri Jun 16 15:46:59 CST 2017]; root of context hierarchy
+[INFO][2017-06-16 15:46:59,255][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-06-16 15:46:59,455][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2f93c0cf: defining beans [dataSource,sessionFactory,transactionManager,baseDao,adminDaoImp,wlDaoImp,gysDaoImp,ckDaoImp,rukuDaoImp,adminServiceImp,wlServiceImp,gysServiceImp,ckServiceImp,rukuServiceImp,loginAction,wlAction,gysAction,ckAction,ruKuAction]; root of factory hierarchy
+[INFO][2017-06-16 15:46:59,541][org.hibernate.cfg.Environment]Hibernate 3.3.2.GA
+[INFO][2017-06-16 15:46:59,542][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2017-06-16 15:46:59,544][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2017-06-16 15:46:59,547][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2017-06-16 15:46:59,682][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbWl -> tb_wl
+[INFO][2017-06-16 15:46:59,746][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCgWl -> tb_cg_wl
+[INFO][2017-06-16 15:46:59,767][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCg -> tb_cg
+[INFO][2017-06-16 15:46:59,796][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXs -> tb_xs
+[INFO][2017-06-16 15:46:59,838][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbUser -> tb_user
+[INFO][2017-06-16 15:46:59,895][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXsRecord -> tb_xs_record
+[INFO][2017-06-16 15:46:59,928][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbGys -> tb_gys
+[INFO][2017-06-16 15:46:59,986][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCk -> tb_ck
+[INFO][2017-06-16 15:46:59,998][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.Admin -> admin
+[INFO][2017-06-16 15:47:00,043][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbRuku -> tb_ruku
+[INFO][2017-06-16 15:47:00,045][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 15:47:00,046][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 15:47:00,046][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCg.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 15:47:00,047][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbUser.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 15:47:00,047][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbXsRecord.tbXses -> tb_xs
+[INFO][2017-06-16 15:47:00,047][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbGys.tbWls -> tb_wl
+[INFO][2017-06-16 15:47:00,047][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCk.tbRukus -> tb_ruku
+[INFO][2017-06-16 15:47:00,048][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.Admin.tbRukus -> tb_ruku
+[INFO][2017-06-16 15:47:00,048][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2017-06-16 15:47:00,051][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2017-06-16 15:47:00,220][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.7.12-log
+[INFO][2017-06-16 15:47:00,220][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+[INFO][2017-06-16 15:47:00,240][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-06-16 15:47:00,243][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2017-06-16 15:47:00,246][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2017-06-16 15:47:00,246][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2017-06-16 15:47:00,247][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2017-06-16 15:47:00,247][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2017-06-16 15:47:00,247][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2017-06-16 15:47:00,248][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2017-06-16 15:47:00,248][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2017-06-16 15:47:00,248][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2017-06-16 15:47:00,249][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2017-06-16 15:47:00,249][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2017-06-16 15:47:00,249][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2017-06-16 15:47:00,249][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2017-06-16 15:47:00,249][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2017-06-16 15:47:00,249][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2017-06-16 15:47:00,251][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2017-06-16 15:47:00,251][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2017-06-16 15:47:00,251][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2017-06-16 15:47:00,252][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2017-06-16 15:47:00,252][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2017-06-16 15:47:00,252][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2017-06-16 15:47:00,252][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2017-06-16 15:47:00,252][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2017-06-16 15:47:00,255][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2017-06-16 15:47:00,256][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2017-06-16 15:47:00,256][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2017-06-16 15:47:00,256][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2017-06-16 15:47:00,256][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2017-06-16 15:47:00,280][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2017-06-16 15:47:00,446][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2017-06-16 15:47:00,463][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@61250ff2] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-06-16 15:47:00,655][org.hibernate.event.def.DefaultLoadEventListener]Error performing load command
+org.hibernate.ObjectNotFoundException: No row with the given identifier exists: [com.hm.InAndMarkSys.model.TbGys#3242]
+	at org.hibernate.impl.SessionFactoryImpl$2.handleEntityNotFound(SessionFactoryImpl.java:419)
+	at org.hibernate.event.def.DefaultLoadEventListener.load(DefaultLoadEventListener.java:171)
+	at org.hibernate.event.def.DefaultLoadEventListener.proxyOrLoad(DefaultLoadEventListener.java:223)
+	at org.hibernate.event.def.DefaultLoadEventListener.onLoad(DefaultLoadEventListener.java:126)
+	at org.hibernate.impl.SessionImpl.fireLoad(SessionImpl.java:906)
+	at org.hibernate.impl.SessionImpl.internalLoad(SessionImpl.java:874)
+	at org.hibernate.type.EntityType.resolveIdentifier(EntityType.java:590)
+	at org.hibernate.type.EntityType.resolve(EntityType.java:412)
+	at org.hibernate.engine.TwoPhaseLoad.initializeEntity(TwoPhaseLoad.java:139)
+	at org.hibernate.loader.Loader.initializeEntitiesAndCollections(Loader.java:877)
+	at org.hibernate.loader.Loader.doQuery(Loader.java:752)
+	at org.hibernate.loader.Loader.doQueryAndInitializeNonLazyCollections(Loader.java:259)
+	at org.hibernate.loader.Loader.doList(Loader.java:2232)
+	at org.hibernate.loader.Loader.listIgnoreQueryCache(Loader.java:2129)
+	at org.hibernate.loader.Loader.list(Loader.java:2124)
+	at org.hibernate.loader.hql.QueryLoader.list(QueryLoader.java:401)
+	at org.hibernate.hql.ast.QueryTranslatorImpl.list(QueryTranslatorImpl.java:363)
+	at org.hibernate.engine.query.HQLQueryPlan.performList(HQLQueryPlan.java:196)
+	at org.hibernate.impl.SessionImpl.list(SessionImpl.java:1149)
+	at org.hibernate.impl.QueryImpl.list(QueryImpl.java:102)
+	at com.hm.InAndMarkSys.dao.imp.WlDaoImp.queryWlByPager(WlDaoImp.java:32)
+	at com.hm.InAndMarkSys.test.DaoTest.main(DaoTest.java:36)
+[INFO][2017-06-16 15:53:01,817][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@59c9b9ca: startup date [Fri Jun 16 15:53:01 CST 2017]; root of context hierarchy
+[INFO][2017-06-16 15:53:01,863][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-06-16 15:53:02,035][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@64633e5e: defining beans [dataSource,sessionFactory,transactionManager,baseDao,adminDaoImp,wlDaoImp,gysDaoImp,ckDaoImp,rukuDaoImp,adminServiceImp,wlServiceImp,gysServiceImp,ckServiceImp,rukuServiceImp,loginAction,wlAction,gysAction,ckAction,ruKuAction]; root of factory hierarchy
+[INFO][2017-06-16 15:53:02,131][org.hibernate.cfg.Environment]Hibernate 3.3.2.GA
+[INFO][2017-06-16 15:53:02,139][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2017-06-16 15:53:02,141][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2017-06-16 15:53:02,143][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2017-06-16 15:53:02,282][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCk -> tb_ck
+[INFO][2017-06-16 15:53:02,318][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.Admin -> admin
+[INFO][2017-06-16 15:53:02,356][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbRuku -> tb_ruku
+[INFO][2017-06-16 15:53:02,416][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbWl -> tb_wl
+[INFO][2017-06-16 15:53:02,467][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCgWl -> tb_cg_wl
+[INFO][2017-06-16 15:53:02,486][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCg -> tb_cg
+[INFO][2017-06-16 15:53:02,510][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXs -> tb_xs
+[INFO][2017-06-16 15:53:02,575][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbUser -> tb_user
+[INFO][2017-06-16 15:53:02,593][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXsRecord -> tb_xs_record
+[INFO][2017-06-16 15:53:02,647][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbGys -> tb_gys
+[INFO][2017-06-16 15:53:02,648][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCk.tbRukus -> tb_ruku
+[INFO][2017-06-16 15:53:02,649][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.Admin.tbRukus -> tb_ruku
+[INFO][2017-06-16 15:53:02,650][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 15:53:02,650][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 15:53:02,651][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCg.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 15:53:02,651][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbUser.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 15:53:02,652][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbXsRecord.tbXses -> tb_xs
+[INFO][2017-06-16 15:53:02,652][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbGys.tbWls -> tb_wl
+[INFO][2017-06-16 15:53:02,652][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2017-06-16 15:53:02,659][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2017-06-16 15:53:02,838][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.7.12-log
+[INFO][2017-06-16 15:53:02,838][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+[INFO][2017-06-16 15:53:02,861][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-06-16 15:53:02,864][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2017-06-16 15:53:02,865][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2017-06-16 15:53:02,865][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2017-06-16 15:53:02,866][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2017-06-16 15:53:02,866][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2017-06-16 15:53:02,866][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2017-06-16 15:53:02,869][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2017-06-16 15:53:02,870][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2017-06-16 15:53:02,870][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2017-06-16 15:53:02,870][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2017-06-16 15:53:02,871][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2017-06-16 15:53:02,871][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2017-06-16 15:53:02,871][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2017-06-16 15:53:02,871][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2017-06-16 15:53:02,871][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2017-06-16 15:53:02,873][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2017-06-16 15:53:02,873][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2017-06-16 15:53:02,873][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2017-06-16 15:53:02,874][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2017-06-16 15:53:02,874][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2017-06-16 15:53:02,874][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2017-06-16 15:53:02,874][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2017-06-16 15:53:02,874][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2017-06-16 15:53:02,878][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2017-06-16 15:53:02,878][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2017-06-16 15:53:02,878][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2017-06-16 15:53:02,879][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2017-06-16 15:53:02,879][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2017-06-16 15:53:02,904][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2017-06-16 15:53:03,092][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2017-06-16 15:53:03,110][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@9bad5a] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-06-16 15:53:26,738][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@78105738: startup date [Fri Jun 16 15:53:26 CST 2017]; root of context hierarchy
+[INFO][2017-06-16 15:53:26,786][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-06-16 15:53:26,971][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2f93c0cf: defining beans [dataSource,sessionFactory,transactionManager,baseDao,adminDaoImp,wlDaoImp,gysDaoImp,ckDaoImp,rukuDaoImp,adminServiceImp,wlServiceImp,gysServiceImp,ckServiceImp,rukuServiceImp,loginAction,wlAction,gysAction,ckAction,ruKuAction]; root of factory hierarchy
+[INFO][2017-06-16 15:53:27,064][org.hibernate.cfg.Environment]Hibernate 3.3.2.GA
+[INFO][2017-06-16 15:53:27,091][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2017-06-16 15:53:27,094][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2017-06-16 15:53:27,099][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2017-06-16 15:53:27,234][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCk -> tb_ck
+[INFO][2017-06-16 15:53:27,274][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.Admin -> admin
+[INFO][2017-06-16 15:53:27,310][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbRuku -> tb_ruku
+[INFO][2017-06-16 15:53:27,367][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbWl -> tb_wl
+[INFO][2017-06-16 15:53:27,415][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCgWl -> tb_cg_wl
+[INFO][2017-06-16 15:53:27,436][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCg -> tb_cg
+[INFO][2017-06-16 15:53:27,458][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXs -> tb_xs
+[INFO][2017-06-16 15:53:27,517][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbUser -> tb_user
+[INFO][2017-06-16 15:53:27,538][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXsRecord -> tb_xs_record
+[INFO][2017-06-16 15:53:27,580][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbGys -> tb_gys
+[INFO][2017-06-16 15:53:27,581][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCk.tbRukus -> tb_ruku
+[INFO][2017-06-16 15:53:27,582][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.Admin.tbRukus -> tb_ruku
+[INFO][2017-06-16 15:53:27,582][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 15:53:27,582][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 15:53:27,582][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCg.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 15:53:27,582][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbUser.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 15:53:27,582][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbXsRecord.tbXses -> tb_xs
+[INFO][2017-06-16 15:53:27,582][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbGys.tbWls -> tb_wl
+[INFO][2017-06-16 15:53:27,583][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2017-06-16 15:53:27,586][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2017-06-16 15:53:27,769][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.7.12-log
+[INFO][2017-06-16 15:53:27,769][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+[INFO][2017-06-16 15:53:27,793][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-06-16 15:53:27,796][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2017-06-16 15:53:27,797][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2017-06-16 15:53:27,797][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2017-06-16 15:53:27,798][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2017-06-16 15:53:27,798][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2017-06-16 15:53:27,798][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2017-06-16 15:53:27,799][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2017-06-16 15:53:27,799][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2017-06-16 15:53:27,799][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2017-06-16 15:53:27,800][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2017-06-16 15:53:27,800][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2017-06-16 15:53:27,800][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2017-06-16 15:53:27,800][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2017-06-16 15:53:27,800][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2017-06-16 15:53:27,800][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2017-06-16 15:53:27,802][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2017-06-16 15:53:27,802][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2017-06-16 15:53:27,802][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2017-06-16 15:53:27,802][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2017-06-16 15:53:27,802][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2017-06-16 15:53:27,803][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2017-06-16 15:53:27,803][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2017-06-16 15:53:27,803][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2017-06-16 15:53:27,808][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2017-06-16 15:53:27,810][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2017-06-16 15:53:27,810][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2017-06-16 15:53:27,810][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2017-06-16 15:53:27,810][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2017-06-16 15:53:27,836][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2017-06-16 15:53:28,016][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2017-06-16 15:53:28,034][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@6c91f005] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-06-16 20:57:58,896][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@35ab28fe: startup date [Fri Jun 16 20:57:58 CST 2017]; root of context hierarchy
+[INFO][2017-06-16 20:57:58,945][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-06-16 20:57:59,130][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@64633e5e: defining beans [dataSource,sessionFactory,transactionManager,baseDao,adminDaoImp,wlDaoImp,gysDaoImp,ckDaoImp,rukuDaoImp,adminServiceImp,wlServiceImp,gysServiceImp,ckServiceImp,rukuServiceImp,loginAction,wlAction,gysAction,ckAction,ruKuAction]; root of factory hierarchy
+[INFO][2017-06-16 20:57:59,239][org.hibernate.cfg.Environment]Hibernate 3.3.2.GA
+[INFO][2017-06-16 20:57:59,241][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2017-06-16 20:57:59,246][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2017-06-16 20:57:59,248][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2017-06-16 20:57:59,394][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCk -> tb_ck
+[INFO][2017-06-16 20:57:59,437][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.Admin -> admin
+[INFO][2017-06-16 20:57:59,473][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbRuku -> tb_ruku
+[INFO][2017-06-16 20:57:59,544][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbWl -> tb_wl
+[INFO][2017-06-16 20:57:59,587][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCgWl -> tb_cg_wl
+[INFO][2017-06-16 20:57:59,607][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCg -> tb_cg
+[INFO][2017-06-16 20:57:59,632][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXs -> tb_xs
+[INFO][2017-06-16 20:57:59,698][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbUser -> tb_user
+[INFO][2017-06-16 20:57:59,718][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXsRecord -> tb_xs_record
+[INFO][2017-06-16 20:57:59,771][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbGys -> tb_gys
+[INFO][2017-06-16 20:57:59,773][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCk.tbRukus -> tb_ruku
+[INFO][2017-06-16 20:57:59,775][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.Admin.tbRukus -> tb_ruku
+[INFO][2017-06-16 20:57:59,776][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 20:57:59,777][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 20:57:59,777][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCg.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 20:57:59,777][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbUser.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 20:57:59,777][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbXsRecord.tbXses -> tb_xs
+[INFO][2017-06-16 20:57:59,777][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbGys.tbWls -> tb_wl
+[INFO][2017-06-16 20:57:59,778][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2017-06-16 20:57:59,782][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2017-06-16 20:57:59,972][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.7.12-log
+[INFO][2017-06-16 20:57:59,972][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+[INFO][2017-06-16 20:57:59,998][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-06-16 20:58:00,001][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2017-06-16 20:58:00,002][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2017-06-16 20:58:00,002][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2017-06-16 20:58:00,003][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2017-06-16 20:58:00,003][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2017-06-16 20:58:00,003][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2017-06-16 20:58:00,004][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2017-06-16 20:58:00,004][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2017-06-16 20:58:00,004][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2017-06-16 20:58:00,004][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2017-06-16 20:58:00,005][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2017-06-16 20:58:00,005][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2017-06-16 20:58:00,005][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2017-06-16 20:58:00,005][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2017-06-16 20:58:00,005][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2017-06-16 20:58:00,010][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2017-06-16 20:58:00,011][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2017-06-16 20:58:00,011][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2017-06-16 20:58:00,011][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2017-06-16 20:58:00,011][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2017-06-16 20:58:00,011][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2017-06-16 20:58:00,011][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2017-06-16 20:58:00,011][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2017-06-16 20:58:00,015][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2017-06-16 20:58:00,016][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2017-06-16 20:58:00,016][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2017-06-16 20:58:00,016][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2017-06-16 20:58:00,017][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2017-06-16 20:58:00,049][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2017-06-16 20:58:00,252][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2017-06-16 20:58:00,272][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@61250ff2] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-06-16 20:58:00,512][org.hibernate.type.IntegerType]could not read column value from result set: ckadmin2_; Invalid value for getInt() - 'admin'
+[WARN][2017-06-16 20:58:00,514][org.hibernate.util.JDBCExceptionReporter]SQL Error: 0, SQLState: S1009
+[ERROR][2017-06-16 20:58:00,514][org.hibernate.util.JDBCExceptionReporter]Invalid value for getInt() - 'admin'
+[INFO][2017-06-16 20:58:15,201][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4ac4aad3: startup date [Fri Jun 16 20:58:15 CST 2017]; root of context hierarchy
+[INFO][2017-06-16 20:58:15,246][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-06-16 20:58:15,470][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@704f459c: defining beans [dataSource,sessionFactory,transactionManager,baseDao,adminDaoImp,wlDaoImp,gysDaoImp,ckDaoImp,rukuDaoImp,adminServiceImp,wlServiceImp,gysServiceImp,ckServiceImp,rukuServiceImp,loginAction,wlAction,gysAction,ckAction,ruKuAction]; root of factory hierarchy
+[INFO][2017-06-16 20:58:15,575][org.hibernate.cfg.Environment]Hibernate 3.3.2.GA
+[INFO][2017-06-16 20:58:15,577][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2017-06-16 20:58:15,580][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2017-06-16 20:58:15,584][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2017-06-16 20:58:15,732][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCk -> tb_ck
+[INFO][2017-06-16 20:58:15,769][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.Admin -> admin
+[INFO][2017-06-16 20:58:15,806][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbRuku -> tb_ruku
+[INFO][2017-06-16 20:58:15,884][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbWl -> tb_wl
+[INFO][2017-06-16 20:58:15,927][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCgWl -> tb_cg_wl
+[INFO][2017-06-16 20:58:15,949][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCg -> tb_cg
+[INFO][2017-06-16 20:58:15,983][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXs -> tb_xs
+[INFO][2017-06-16 20:58:16,043][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbUser -> tb_user
+[INFO][2017-06-16 20:58:16,063][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXsRecord -> tb_xs_record
+[INFO][2017-06-16 20:58:16,110][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbGys -> tb_gys
+[INFO][2017-06-16 20:58:16,114][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCk.tbRukus -> tb_ruku
+[INFO][2017-06-16 20:58:16,115][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.Admin.tbRukus -> tb_ruku
+[INFO][2017-06-16 20:58:16,116][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 20:58:16,116][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 20:58:16,116][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCg.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 20:58:16,119][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbUser.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 20:58:16,119][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbXsRecord.tbXses -> tb_xs
+[INFO][2017-06-16 20:58:16,120][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbGys.tbWls -> tb_wl
+[INFO][2017-06-16 20:58:16,120][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2017-06-16 20:58:16,124][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2017-06-16 20:58:16,311][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.7.12-log
+[INFO][2017-06-16 20:58:16,311][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+[INFO][2017-06-16 20:58:16,332][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-06-16 20:58:16,335][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2017-06-16 20:58:16,336][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2017-06-16 20:58:16,339][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2017-06-16 20:58:16,339][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2017-06-16 20:58:16,339][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2017-06-16 20:58:16,339][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2017-06-16 20:58:16,340][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2017-06-16 20:58:16,340][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2017-06-16 20:58:16,340][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2017-06-16 20:58:16,341][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2017-06-16 20:58:16,341][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2017-06-16 20:58:16,341][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2017-06-16 20:58:16,341][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2017-06-16 20:58:16,341][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2017-06-16 20:58:16,341][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2017-06-16 20:58:16,343][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2017-06-16 20:58:16,343][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2017-06-16 20:58:16,343][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2017-06-16 20:58:16,343][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2017-06-16 20:58:16,343][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2017-06-16 20:58:16,344][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2017-06-16 20:58:16,344][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2017-06-16 20:58:16,344][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2017-06-16 20:58:16,346][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2017-06-16 20:58:16,347][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2017-06-16 20:58:16,347][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2017-06-16 20:58:16,347][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2017-06-16 20:58:16,347][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2017-06-16 20:58:16,375][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2017-06-16 20:58:16,570][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2017-06-16 20:58:16,593][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@61250ff2] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-06-16 20:58:16,810][org.hibernate.type.IntegerType]could not read column value from result set: ckadmin2_; Invalid value for getInt() - 'admin'
+[WARN][2017-06-16 20:58:16,811][org.hibernate.util.JDBCExceptionReporter]SQL Error: 0, SQLState: S1009
+[ERROR][2017-06-16 20:58:16,811][org.hibernate.util.JDBCExceptionReporter]Invalid value for getInt() - 'admin'
+[INFO][2017-06-16 21:00:47,576][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@59c9b9ca: startup date [Fri Jun 16 21:00:47 CST 2017]; root of context hierarchy
+[INFO][2017-06-16 21:00:47,625][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-06-16 21:00:47,818][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@10ad8659: defining beans [dataSource,sessionFactory,transactionManager,baseDao,adminDaoImp,wlDaoImp,gysDaoImp,ckDaoImp,rukuDaoImp,adminServiceImp,wlServiceImp,gysServiceImp,ckServiceImp,rukuServiceImp,loginAction,wlAction,gysAction,ckAction,ruKuAction]; root of factory hierarchy
+[INFO][2017-06-16 21:00:47,927][org.hibernate.cfg.Environment]Hibernate 3.3.2.GA
+[INFO][2017-06-16 21:00:47,931][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2017-06-16 21:00:47,934][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2017-06-16 21:00:47,937][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2017-06-16 21:00:48,077][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCk -> tb_ck
+[INFO][2017-06-16 21:00:48,116][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.Admin -> admin
+[INFO][2017-06-16 21:00:48,154][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbRuku -> tb_ruku
+[INFO][2017-06-16 21:00:48,221][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbWl -> tb_wl
+[INFO][2017-06-16 21:00:48,279][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCgWl -> tb_cg_wl
+[INFO][2017-06-16 21:00:48,293][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCg -> tb_cg
+[INFO][2017-06-16 21:00:48,315][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXs -> tb_xs
+[INFO][2017-06-16 21:00:48,373][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbUser -> tb_user
+[INFO][2017-06-16 21:00:48,396][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXsRecord -> tb_xs_record
+[INFO][2017-06-16 21:00:48,458][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbGys -> tb_gys
+[INFO][2017-06-16 21:00:48,459][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCk.tbRukus -> tb_ruku
+[INFO][2017-06-16 21:00:48,462][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.Admin.tbRukus -> tb_ruku
+[INFO][2017-06-16 21:00:48,462][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 21:00:48,462][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 21:00:48,465][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCg.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 21:00:48,465][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbUser.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 21:00:48,465][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbXsRecord.tbXses -> tb_xs
+[INFO][2017-06-16 21:00:48,465][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbGys.tbWls -> tb_wl
+[INFO][2017-06-16 21:00:48,465][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2017-06-16 21:00:48,469][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2017-06-16 21:00:48,648][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.7.12-log
+[INFO][2017-06-16 21:00:48,648][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+[INFO][2017-06-16 21:00:48,667][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-06-16 21:00:48,669][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2017-06-16 21:00:48,670][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2017-06-16 21:00:48,670][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2017-06-16 21:00:48,670][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2017-06-16 21:00:48,670][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2017-06-16 21:00:48,672][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2017-06-16 21:00:48,673][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2017-06-16 21:00:48,673][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2017-06-16 21:00:48,673][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2017-06-16 21:00:48,673][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2017-06-16 21:00:48,673][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2017-06-16 21:00:48,673][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2017-06-16 21:00:48,674][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2017-06-16 21:00:48,674][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2017-06-16 21:00:48,674][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2017-06-16 21:00:48,675][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2017-06-16 21:00:48,675][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2017-06-16 21:00:48,675][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2017-06-16 21:00:48,675][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2017-06-16 21:00:48,676][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2017-06-16 21:00:48,677][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2017-06-16 21:00:48,677][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2017-06-16 21:00:48,677][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2017-06-16 21:00:48,680][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2017-06-16 21:00:48,680][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2017-06-16 21:00:48,681][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2017-06-16 21:00:48,681][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2017-06-16 21:00:48,681][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2017-06-16 21:00:48,717][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2017-06-16 21:00:48,911][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2017-06-16 21:00:48,934][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@9bad5a] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-06-16 21:00:49,146][org.hibernate.type.IntegerType]could not read column value from result set: ckadmin2_; Invalid value for getInt() - 'admin'
+[WARN][2017-06-16 21:00:49,147][org.hibernate.util.JDBCExceptionReporter]SQL Error: 0, SQLState: S1009
+[ERROR][2017-06-16 21:00:49,147][org.hibernate.util.JDBCExceptionReporter]Invalid value for getInt() - 'admin'
+[INFO][2017-06-16 21:04:45,237][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@35ab28fe: startup date [Fri Jun 16 21:04:45 CST 2017]; root of context hierarchy
+[INFO][2017-06-16 21:04:45,302][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-06-16 21:04:45,579][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@64633e5e: defining beans [dataSource,sessionFactory,transactionManager,baseDao,adminDaoImp,wlDaoImp,gysDaoImp,ckDaoImp,rukuDaoImp,adminServiceImp,wlServiceImp,gysServiceImp,ckServiceImp,rukuServiceImp,loginAction,wlAction,gysAction,ckAction,ruKuAction]; root of factory hierarchy
+[INFO][2017-06-16 21:04:45,693][org.hibernate.cfg.Environment]Hibernate 3.3.2.GA
+[INFO][2017-06-16 21:04:45,697][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2017-06-16 21:04:45,699][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2017-06-16 21:04:45,702][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2017-06-16 21:04:45,904][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCk -> tb_ck
+[INFO][2017-06-16 21:04:46,114][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.Admin -> admin
+[INFO][2017-06-16 21:04:46,156][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbRuku -> tb_ruku
+[INFO][2017-06-16 21:04:46,224][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbWl -> tb_wl
+[INFO][2017-06-16 21:04:46,279][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCgWl -> tb_cg_wl
+[INFO][2017-06-16 21:04:46,300][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCg -> tb_cg
+[INFO][2017-06-16 21:04:46,324][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXs -> tb_xs
+[INFO][2017-06-16 21:04:46,391][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbUser -> tb_user
+[INFO][2017-06-16 21:04:46,417][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXsRecord -> tb_xs_record
+[INFO][2017-06-16 21:04:46,466][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbGys -> tb_gys
+[INFO][2017-06-16 21:04:46,468][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCk.tbRukus -> tb_ruku
+[INFO][2017-06-16 21:04:46,469][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.Admin.tbRukus -> tb_ruku
+[INFO][2017-06-16 21:04:46,474][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 21:04:46,475][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 21:04:46,475][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCg.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 21:04:46,476][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbUser.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 21:04:46,477][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbXsRecord.tbXses -> tb_xs
+[INFO][2017-06-16 21:04:46,477][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbGys.tbWls -> tb_wl
+[INFO][2017-06-16 21:04:46,482][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2017-06-16 21:04:46,487][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2017-06-16 21:04:46,716][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.7.12-log
+[INFO][2017-06-16 21:04:46,716][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+[INFO][2017-06-16 21:04:46,734][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-06-16 21:04:46,736][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2017-06-16 21:04:46,737][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2017-06-16 21:04:46,737][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2017-06-16 21:04:46,737][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2017-06-16 21:04:46,737][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2017-06-16 21:04:46,739][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2017-06-16 21:04:46,740][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2017-06-16 21:04:46,740][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2017-06-16 21:04:46,740][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2017-06-16 21:04:46,740][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2017-06-16 21:04:46,740][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2017-06-16 21:04:46,740][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2017-06-16 21:04:46,740][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2017-06-16 21:04:46,740][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2017-06-16 21:04:46,741][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2017-06-16 21:04:46,744][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2017-06-16 21:04:46,744][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2017-06-16 21:04:46,744][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2017-06-16 21:04:46,745][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2017-06-16 21:04:46,745][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2017-06-16 21:04:46,745][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2017-06-16 21:04:46,746][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2017-06-16 21:04:46,746][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2017-06-16 21:04:46,749][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2017-06-16 21:04:46,749][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2017-06-16 21:04:46,750][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2017-06-16 21:04:46,750][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2017-06-16 21:04:46,750][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2017-06-16 21:04:46,778][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2017-06-16 21:04:47,004][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2017-06-16 21:04:47,028][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@2e864e43] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-06-16 21:04:47,262][org.hibernate.type.IntegerType]could not read column value from result set: ckadmin2_; Invalid value for getInt() - 'admin'
+[WARN][2017-06-16 21:04:47,263][org.hibernate.util.JDBCExceptionReporter]SQL Error: 0, SQLState: S1009
+[ERROR][2017-06-16 21:04:47,263][org.hibernate.util.JDBCExceptionReporter]Invalid value for getInt() - 'admin'
+[INFO][2017-06-16 21:39:13,960][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4ac4aad3: startup date [Fri Jun 16 21:39:13 CST 2017]; root of context hierarchy
+[INFO][2017-06-16 21:39:14,037][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-06-16 21:39:14,296][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@704f459c: defining beans [dataSource,sessionFactory,transactionManager,baseDao,adminDaoImp,wlDaoImp,gysDaoImp,ckDaoImp,rukuDaoImp,adminServiceImp,wlServiceImp,gysServiceImp,ckServiceImp,rukuServiceImp,loginAction,wlAction,gysAction,ckAction,ruKuAction]; root of factory hierarchy
+[INFO][2017-06-16 21:39:14,412][org.hibernate.cfg.Environment]Hibernate 3.3.2.GA
+[INFO][2017-06-16 21:39:14,417][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2017-06-16 21:39:14,419][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2017-06-16 21:39:14,422][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2017-06-16 21:39:14,585][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCk -> tb_ck
+[INFO][2017-06-16 21:39:14,629][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.Admin -> admin
+[INFO][2017-06-16 21:39:14,672][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbRuku -> tb_ruku
+[INFO][2017-06-16 21:39:14,756][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbWl -> tb_wl
+[INFO][2017-06-16 21:39:14,802][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCgWl -> tb_cg_wl
+[INFO][2017-06-16 21:39:14,826][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCg -> tb_cg
+[INFO][2017-06-16 21:39:14,865][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXs -> tb_xs
+[INFO][2017-06-16 21:39:14,941][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbUser -> tb_user
+[INFO][2017-06-16 21:39:14,953][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXsRecord -> tb_xs_record
+[INFO][2017-06-16 21:39:15,016][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbGys -> tb_gys
+[INFO][2017-06-16 21:39:15,017][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCk.tbRukus -> tb_ruku
+[INFO][2017-06-16 21:39:15,018][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.Admin.tbRukus -> tb_ruku
+[INFO][2017-06-16 21:39:15,018][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 21:39:15,018][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 21:39:15,018][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCg.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 21:39:15,019][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbUser.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 21:39:15,019][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbXsRecord.tbXses -> tb_xs
+[INFO][2017-06-16 21:39:15,019][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbGys.tbWls -> tb_wl
+[INFO][2017-06-16 21:39:15,019][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2017-06-16 21:39:15,028][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2017-06-16 21:39:15,325][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.7.12-log
+[INFO][2017-06-16 21:39:15,326][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+[INFO][2017-06-16 21:39:15,344][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-06-16 21:39:15,347][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2017-06-16 21:39:15,347][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2017-06-16 21:39:15,348][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2017-06-16 21:39:15,348][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2017-06-16 21:39:15,348][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2017-06-16 21:39:15,350][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2017-06-16 21:39:15,351][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2017-06-16 21:39:15,351][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2017-06-16 21:39:15,351][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2017-06-16 21:39:15,352][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2017-06-16 21:39:15,352][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2017-06-16 21:39:15,352][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2017-06-16 21:39:15,352][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2017-06-16 21:39:15,352][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2017-06-16 21:39:15,352][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2017-06-16 21:39:15,354][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2017-06-16 21:39:15,354][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2017-06-16 21:39:15,354][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2017-06-16 21:39:15,355][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2017-06-16 21:39:15,355][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2017-06-16 21:39:15,355][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2017-06-16 21:39:15,355][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2017-06-16 21:39:15,355][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2017-06-16 21:39:15,358][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2017-06-16 21:39:15,359][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2017-06-16 21:39:15,359][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2017-06-16 21:39:15,359][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2017-06-16 21:39:15,360][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2017-06-16 21:39:15,391][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2017-06-16 21:39:15,605][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2017-06-16 21:39:15,626][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@61250ff2] of Hibernate SessionFactory for HibernateTransactionManager
+[INFO][2017-06-16 21:40:24,220][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@59c9b9ca: startup date [Fri Jun 16 21:40:24 CST 2017]; root of context hierarchy
+[INFO][2017-06-16 21:40:24,281][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-06-16 21:40:24,483][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@2f93c0cf: defining beans [dataSource,sessionFactory,transactionManager,baseDao,adminDaoImp,wlDaoImp,gysDaoImp,ckDaoImp,rukuDaoImp,adminServiceImp,wlServiceImp,gysServiceImp,ckServiceImp,rukuServiceImp,loginAction,wlAction,gysAction,ckAction,ruKuAction]; root of factory hierarchy
+[INFO][2017-06-16 21:40:24,594][org.hibernate.cfg.Environment]Hibernate 3.3.2.GA
+[INFO][2017-06-16 21:40:24,596][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2017-06-16 21:40:24,598][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2017-06-16 21:40:24,600][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2017-06-16 21:40:24,754][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCk -> tb_ck
+[INFO][2017-06-16 21:40:24,802][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.Admin -> admin
+[INFO][2017-06-16 21:40:24,854][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbRuku -> tb_ruku
+[INFO][2017-06-16 21:40:24,933][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbWl -> tb_wl
+[INFO][2017-06-16 21:40:24,975][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCgWl -> tb_cg_wl
+[INFO][2017-06-16 21:40:25,006][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCg -> tb_cg
+[INFO][2017-06-16 21:40:25,038][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXs -> tb_xs
+[INFO][2017-06-16 21:40:25,101][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbUser -> tb_user
+[INFO][2017-06-16 21:40:25,116][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXsRecord -> tb_xs_record
+[INFO][2017-06-16 21:40:25,189][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbGys -> tb_gys
+[INFO][2017-06-16 21:40:25,192][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCk.tbRukus -> tb_ruku
+[INFO][2017-06-16 21:40:25,193][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.Admin.tbRukus -> tb_ruku
+[INFO][2017-06-16 21:40:25,195][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 21:40:25,201][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 21:40:25,202][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCg.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 21:40:25,202][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbUser.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 21:40:25,204][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbXsRecord.tbXses -> tb_xs
+[INFO][2017-06-16 21:40:25,204][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbGys.tbWls -> tb_wl
+[INFO][2017-06-16 21:40:25,205][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2017-06-16 21:40:25,211][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2017-06-16 21:40:25,424][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.7.12-log
+[INFO][2017-06-16 21:40:25,424][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+[INFO][2017-06-16 21:40:25,446][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-06-16 21:40:25,452][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2017-06-16 21:40:25,453][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2017-06-16 21:40:25,454][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2017-06-16 21:40:25,454][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2017-06-16 21:40:25,454][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2017-06-16 21:40:25,454][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2017-06-16 21:40:25,455][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2017-06-16 21:40:25,455][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2017-06-16 21:40:25,455][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2017-06-16 21:40:25,456][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2017-06-16 21:40:25,456][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2017-06-16 21:40:25,456][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2017-06-16 21:40:25,456][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2017-06-16 21:40:25,456][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2017-06-16 21:40:25,456][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2017-06-16 21:40:25,458][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2017-06-16 21:40:25,458][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2017-06-16 21:40:25,458][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2017-06-16 21:40:25,459][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2017-06-16 21:40:25,459][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2017-06-16 21:40:25,459][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2017-06-16 21:40:25,459][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2017-06-16 21:40:25,459][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2017-06-16 21:40:25,465][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2017-06-16 21:40:25,465][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2017-06-16 21:40:25,465][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2017-06-16 21:40:25,466][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2017-06-16 21:40:25,466][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2017-06-16 21:40:25,495][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2017-06-16 21:40:25,710][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2017-06-16 21:40:25,735][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@61250ff2] of Hibernate SessionFactory for HibernateTransactionManager
+[ERROR][2017-06-16 21:40:25,996][org.hibernate.LazyInitializationException]could not initialize proxy - no Session
+org.hibernate.LazyInitializationException: could not initialize proxy - no Session
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:132)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:174)
+	at org.hibernate.proxy.pojo.javassist.JavassistLazyInitializer.invoke(JavassistLazyInitializer.java:190)
+	at com.hm.InAndMarkSys.model.Admin_$$_javassist_3.getUsername(Admin_$$_javassist_3.java)
+	at com.hm.InAndMarkSys.test.DaoTest.main(DaoTest.java:57)
+[INFO][2017-06-16 21:40:49,549][org.springframework.context.support.ClassPathXmlApplicationContext]Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@4ac4aad3: startup date [Fri Jun 16 21:40:49 CST 2017]; root of context hierarchy
+[INFO][2017-06-16 21:40:49,606][org.springframework.beans.factory.xml.XmlBeanDefinitionReader]Loading XML bean definitions from class path resource [applicationContext.xml]
+[INFO][2017-06-16 21:40:49,811][org.springframework.beans.factory.support.DefaultListableBeanFactory]Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@704f459c: defining beans [dataSource,sessionFactory,transactionManager,baseDao,adminDaoImp,wlDaoImp,gysDaoImp,ckDaoImp,rukuDaoImp,adminServiceImp,wlServiceImp,gysServiceImp,ckServiceImp,rukuServiceImp,loginAction,wlAction,gysAction,ckAction,ruKuAction]; root of factory hierarchy
+[INFO][2017-06-16 21:40:49,922][org.hibernate.cfg.Environment]Hibernate 3.3.2.GA
+[INFO][2017-06-16 21:40:49,926][org.hibernate.cfg.Environment]hibernate.properties not found
+[INFO][2017-06-16 21:40:49,934][org.hibernate.cfg.Environment]Bytecode provider name : javassist
+[INFO][2017-06-16 21:40:49,937][org.hibernate.cfg.Environment]using JDK 1.4 java.sql.Timestamp handling
+[INFO][2017-06-16 21:40:50,092][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCk -> tb_ck
+[INFO][2017-06-16 21:40:50,136][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.Admin -> admin
+[INFO][2017-06-16 21:40:50,180][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbRuku -> tb_ruku
+[INFO][2017-06-16 21:40:50,257][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbWl -> tb_wl
+[INFO][2017-06-16 21:40:50,313][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCgWl -> tb_cg_wl
+[INFO][2017-06-16 21:40:50,338][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbCg -> tb_cg
+[INFO][2017-06-16 21:40:50,363][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXs -> tb_xs
+[INFO][2017-06-16 21:40:50,434][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbUser -> tb_user
+[INFO][2017-06-16 21:40:50,446][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbXsRecord -> tb_xs_record
+[INFO][2017-06-16 21:40:50,509][org.hibernate.cfg.HbmBinder]Mapping class: com.hm.InAndMarkSys.model.TbGys -> tb_gys
+[INFO][2017-06-16 21:40:50,516][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCk.tbRukus -> tb_ruku
+[INFO][2017-06-16 21:40:50,517][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.Admin.tbRukus -> tb_ruku
+[INFO][2017-06-16 21:40:50,517][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 21:40:50,517][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbWl.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 21:40:50,518][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbCg.tbCgWls -> tb_cg_wl
+[INFO][2017-06-16 21:40:50,518][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbUser.tbXsRecords -> tb_xs_record
+[INFO][2017-06-16 21:40:50,518][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbXsRecord.tbXses -> tb_xs
+[INFO][2017-06-16 21:40:50,518][org.hibernate.cfg.HbmBinder]Mapping collection: com.hm.InAndMarkSys.model.TbGys.tbWls -> tb_wl
+[INFO][2017-06-16 21:40:50,518][org.springframework.orm.hibernate3.LocalSessionFactoryBean]Building new Hibernate SessionFactory
+[INFO][2017-06-16 21:40:50,523][org.hibernate.connection.ConnectionProviderFactory]Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider
+[INFO][2017-06-16 21:40:50,726][org.hibernate.cfg.SettingsFactory]RDBMS: MySQL, version: 5.7.12-log
+[INFO][2017-06-16 21:40:50,726][org.hibernate.cfg.SettingsFactory]JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.0.5 ( $Date: 2007-03-01 00:01:06 +0100 (Thu, 01 Mar 2007) $, $Revision: 6329 $ )
+[INFO][2017-06-16 21:40:50,750][org.hibernate.dialect.Dialect]Using dialect: org.hibernate.dialect.MySQLDialect
+[INFO][2017-06-16 21:40:50,752][org.hibernate.transaction.TransactionFactoryFactory]Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory
+[INFO][2017-06-16 21:40:50,754][org.hibernate.transaction.TransactionManagerLookupFactory]No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)
+[INFO][2017-06-16 21:40:50,754][org.hibernate.cfg.SettingsFactory]Automatic flush during beforeCompletion(): disabled
+[INFO][2017-06-16 21:40:50,754][org.hibernate.cfg.SettingsFactory]Automatic session close at end of transaction: disabled
+[INFO][2017-06-16 21:40:50,755][org.hibernate.cfg.SettingsFactory]JDBC batch size: 15
+[INFO][2017-06-16 21:40:50,755][org.hibernate.cfg.SettingsFactory]JDBC batch updates for versioned data: disabled
+[INFO][2017-06-16 21:40:50,755][org.hibernate.cfg.SettingsFactory]Scrollable result sets: enabled
+[INFO][2017-06-16 21:40:50,755][org.hibernate.cfg.SettingsFactory]JDBC3 getGeneratedKeys(): enabled
+[INFO][2017-06-16 21:40:50,756][org.hibernate.cfg.SettingsFactory]Connection release mode: auto
+[INFO][2017-06-16 21:40:50,756][org.hibernate.cfg.SettingsFactory]Maximum outer join fetch depth: 2
+[INFO][2017-06-16 21:40:50,756][org.hibernate.cfg.SettingsFactory]Default batch fetch size: 1
+[INFO][2017-06-16 21:40:50,756][org.hibernate.cfg.SettingsFactory]Generate SQL with comments: disabled
+[INFO][2017-06-16 21:40:50,756][org.hibernate.cfg.SettingsFactory]Order SQL updates by primary key: disabled
+[INFO][2017-06-16 21:40:50,759][org.hibernate.cfg.SettingsFactory]Order SQL inserts for batching: disabled
+[INFO][2017-06-16 21:40:50,760][org.hibernate.cfg.SettingsFactory]Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory
+[INFO][2017-06-16 21:40:50,761][org.hibernate.hql.ast.ASTQueryTranslatorFactory]Using ASTQueryTranslatorFactory
+[INFO][2017-06-16 21:40:50,761][org.hibernate.cfg.SettingsFactory]Query language substitutions: {}
+[INFO][2017-06-16 21:40:50,762][org.hibernate.cfg.SettingsFactory]JPA-QL strict compliance: disabled
+[INFO][2017-06-16 21:40:50,762][org.hibernate.cfg.SettingsFactory]Second-level cache: enabled
+[INFO][2017-06-16 21:40:50,762][org.hibernate.cfg.SettingsFactory]Query cache: disabled
+[INFO][2017-06-16 21:40:50,763][org.hibernate.cfg.SettingsFactory]Cache region factory : org.hibernate.cache.impl.NoCachingRegionFactory
+[INFO][2017-06-16 21:40:50,763][org.hibernate.cfg.SettingsFactory]Optimize cache for minimal puts: disabled
+[INFO][2017-06-16 21:40:50,763][org.hibernate.cfg.SettingsFactory]Structured second-level cache entries: disabled
+[INFO][2017-06-16 21:40:50,766][org.hibernate.cfg.SettingsFactory]Echoing all SQL to stdout
+[INFO][2017-06-16 21:40:50,767][org.hibernate.cfg.SettingsFactory]Statistics: disabled
+[INFO][2017-06-16 21:40:50,767][org.hibernate.cfg.SettingsFactory]Deleted entity synthetic identifier rollback: disabled
+[INFO][2017-06-16 21:40:50,767][org.hibernate.cfg.SettingsFactory]Default entity-mode: pojo
+[INFO][2017-06-16 21:40:50,767][org.hibernate.cfg.SettingsFactory]Named query checking : enabled
+[INFO][2017-06-16 21:40:50,797][org.hibernate.impl.SessionFactoryImpl]building session factory
+[INFO][2017-06-16 21:40:51,005][org.hibernate.impl.SessionFactoryObjectFactory]Not binding factory to JNDI, no JNDI name configured
+[INFO][2017-06-16 21:40:51,030][org.springframework.orm.hibernate3.HibernateTransactionManager]Using DataSource [org.apache.commons.dbcp.BasicDataSource@61250ff2] of Hibernate SessionFactory for HibernateTransactionManager

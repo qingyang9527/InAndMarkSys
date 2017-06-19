@@ -33,12 +33,12 @@ public class DaoTest {
 //		cgDaoImp.save();
 		
 //		WlDaoImp wlDaoImp=(WlDaoImp) applicationContext.getBean("wlDaoImp");
-//		List<TbWl> list=wlDaoImp.getWlByWlId(1);
+//		List<TbWl> list=wlDaoImp.queryWlByPager(1, 7);
 //		for (TbWl tbWl : list) {
-//			System.out.println(tbWl.getTbGys().getGysAddress());
+//			System.out.println(tbWl.getTbGys().getGysName());
 //		}
 //		GysDaoImp gysDaoImp=(GysDaoImp) applicationContext.getBean("gysDaoImp");
-//		List<TbGys> list=gysDaoImp.get(3242);
+//		List<TbGys> list=gysDaoImp.findAll();
 //		for (TbGys tbGys : list) {
 //			System.out.println(tbGys.getGysName());
 //		}
@@ -52,8 +52,8 @@ public class DaoTest {
 		
 		RuKuDaoImp ruKuDaoImp=(RuKuDaoImp) applicationContext.getBean("rukuDaoImp");
 		System.out.println(ruKuDaoImp.getTotalSize());
-		List<TbRuku> list=ruKuDaoImp.queryPage(1, 1);
-		for (TbRuku tbRuku : list) {
+		List<TbRuku> list1=ruKuDaoImp.queryPage(1, 2);
+		for (TbRuku tbRuku : list1) {
 			System.out.println(tbRuku.getAdmin().getUsername());
 		}
 		

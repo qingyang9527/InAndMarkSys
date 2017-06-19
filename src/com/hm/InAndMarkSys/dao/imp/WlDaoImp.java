@@ -14,10 +14,9 @@ public class WlDaoImp extends BaseDao implements WlDao {
 
 	@Override
 	public void save(TbWl tbWl) {
-		// TODO Auto-generated method stub
 		Session session=getSession();
 		Transaction transaction=session.beginTransaction();
-		session.save(tbWl);
+		session.merge(tbWl);
 		transaction.commit();
 		session.close();
 	}
@@ -36,7 +35,7 @@ public class WlDaoImp extends BaseDao implements WlDao {
 	}
 
 	@Override
-	public List getWlByWlId(Integer WlId) {
+	public List getWlByWlId(String WlId) {
 		// TODO Auto-generated method stub
 		Session session=getSession();
 		String hql="from TbWl t where t.wlid=?";
@@ -48,7 +47,7 @@ public class WlDaoImp extends BaseDao implements WlDao {
 	}
 
 	@Override
-	public void delete(Integer WlId) {
+	public void delete(String WlId) {
 		// TODO Auto-generated method stub
 		Session session=getSession();
 		Transaction transaction=session.beginTransaction();

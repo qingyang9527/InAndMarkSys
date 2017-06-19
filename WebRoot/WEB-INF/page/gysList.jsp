@@ -59,7 +59,7 @@ $(document).ready(function(){
     <div class="tools">
     
     	<ul class="toolbar">
-        <li><a href="${pageContext.request.contextPath }/page/wl_forward.action"><span><img src="${pageContext.request.contextPath}/images/t01.png"/></span>添加</a></li>
+        <li><a href="${pageContext.request.contextPath }/page/gys_forward.action"><span><img src="${pageContext.request.contextPath}/images/t01.png"/></span>添加</a></li>
         <li><span><img src="${pageContext.request.contextPath}/images/t04.png" /></span>统计</li>
 		</ul>
         

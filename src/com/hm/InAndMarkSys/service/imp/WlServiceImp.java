@@ -15,7 +15,6 @@ public class WlServiceImp implements WlService {
 
 	@Override
 	public void save(TbWl tbWl) {
-		// TODO Auto-generated method stub
 		this.wlDao.save(tbWl);
 	}
 
@@ -26,13 +25,12 @@ public class WlServiceImp implements WlService {
 	}
 
 	@Override
-	public List getWlByWlId(Integer WlId) {
-		// TODO Auto-generated method stub
+	public List getWlByWlId(String WlId) {
 		return this.wlDao.getWlByWlId(WlId);
 	}
 
 	@Override
-	public void delete(Integer WlId) {
+	public void delete(String WlId) {
 		// TODO Auto-generated method stub
 		this.wlDao.delete(WlId);
 	}

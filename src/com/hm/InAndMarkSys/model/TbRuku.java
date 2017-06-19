@@ -13,6 +13,7 @@ public class TbRuku implements java.io.Serializable {
 	private Integer id;
 	private Admin admin;
 	private TbCk tbCk;
+	private String rukuid;
 	private Timestamp rktime;
 	private Double price;
 	private Integer num;
@@ -25,10 +26,11 @@ public class TbRuku implements java.io.Serializable {
 	}
 
 	/** full constructor */
-	public TbRuku(Admin admin, TbCk tbCk, Timestamp rktime, Double price,
-			Integer num, Double rktotalprice) {
+	public TbRuku(Admin admin, TbCk tbCk, String rukuid, Timestamp rktime,
+			Double price, Integer num, Double rktotalprice) {
 		this.admin = admin;
 		this.tbCk = tbCk;
+		this.rukuid = rukuid;
 		this.rktime = rktime;
 		this.price = price;
 		this.num = num;
@@ -59,6 +61,14 @@ public class TbRuku implements java.io.Serializable {
 
 	public void setTbCk(TbCk tbCk) {
 		this.tbCk = tbCk;
+	}
+
+	public String getRukuid() {
+		return this.rukuid;
+	}
+
+	public void setRukuid(String rukuid) {
+		this.rukuid = rukuid;
 	}
 
 	public Timestamp getRktime() {

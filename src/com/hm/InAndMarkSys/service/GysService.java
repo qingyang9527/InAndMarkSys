@@ -6,10 +6,11 @@ import com.hm.InAndMarkSys.model.TbGys;
 
 public interface GysService {
 	void save(TbGys	tbGys);
-	void delete(Integer id);
+	void delete(String id);
 	void update(TbGys tbGys);
 	List queryPage(int currentPage,int pageSize);
-	List get(Integer id);
+	List get(String id);
 	int getTotalSize();
+	List<TbGys> findAll();
 
 }

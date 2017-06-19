@@ -24,7 +24,7 @@ public class GysDaoImp extends BaseDao implements GysDao {
 	}
 
 	@Override
-	public void delete(Integer id) {
+	public void delete(String id) {
 		// TODO Auto-generated method stub
 		Session session=getSession();
 		Transaction transaction=session.beginTransaction();
@@ -58,7 +58,7 @@ public class GysDaoImp extends BaseDao implements GysDao {
 	}
 
 	@Override
-	public List get(Integer id) {
+	public List get(String id) {
 		Session session=getSession();
 		String hql="from TbGys t where t.id=?";
 		Query query=session.createQuery(hql);
@@ -77,6 +77,15 @@ public class GysDaoImp extends BaseDao implements GysDao {
 		int totalSize=gysList.size();
 		session.close();
 		return totalSize;
+	}
+
+	@Override
+	public List<TbGys> findAll() {
+		Session session=getSession();
+		Query query=session.createQuery("from TbGys");
+		List gysList=query.list();
+		session.close();
+		return gysList;
 	}
 
 	

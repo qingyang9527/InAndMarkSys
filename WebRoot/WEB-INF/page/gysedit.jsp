@@ -1,6 +1,5 @@
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8"%>
 <%@taglib prefix="s" uri="/struts-tags" %>
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -11,14 +10,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
   <head>
     <base href="<%=basePath%>">
     
-    <title>修改信息</title>
+    <title>My JSP 'gysedit.jsp' starting page</title>
     
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
 	<meta http-equiv="description" content="This is my page">
-	<link href="css/style.css" rel="stylesheet" type="text/css" />
+		<link href="css/style.css" rel="stylesheet" type="text/css" />
 	<script type="text/javascript" src="<%=path %>/layer-v1.9.3/1.9.1/jquery.js"></script>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/layer-v1.9.3/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="${pageContext.request.contextPath}/layer-v1.9.3/1.9.1/layer.js"></script>
@@ -44,7 +43,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 	});
 	</script>
-	
+
   </head>
   
   <body>
@@ -60,28 +59,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <div class="formbody">
     
     <div class="formtitle"><span>编辑信息</span></div>
-    <form action="${pageContext.request.contextPath }/page/wl_update.action" method="post">
+    <form action="${pageContext.request.contextPath }/page/gys_update.action" method="post">
     <ul class="forminfo">
-    <s:iterator value="#request['EditList']" var="editData">
-    <input type="hidden" name="id" value="<s:property value="#editData.id"/>"/>
-    <li><label>物料编码</label><input name="wlid" value="<s:property value="#editData.wlid"/>" type="text" class="dfinput" /><i></i></li>
-    <li><label>物料名称</label><input name="wlname" value="<s:property value="#editData.wlname"/>" type="text" class="dfinput" /><i></i></li>
-    <li><label>物料数量</label><input name="wlnum" id="num" value="<s:property value="#editData.wlnum"/>" type="text" class="dfinput" /><i></i></li>
-    <li><label>物料单价</label><input name="wlprice" id="price" value="<s:property value="#editData.wlprice"/>" type="text" class="dfinput" /><i>单位（￥）</i></li>
-    <li><label>物料总价</label><input name="wltotalprice" id="totalprice" value="<s:property value="#editData.wltotalprice"/>" type="text" class="dfinput" /><i>单位（￥）</i></li>
-    <!--<li><label>物料供应商</label><input name="tbGys.id" value="<s:property value="#editData.tbGys.gysName"/>" type="text" class="dfinput" /><i></i></li>-->
-    <li><label>物料供应商<b>*</b></label>  
-    <div class="vocation">
-    <select class="select1"  name="tbGys.id">
-    	<option value="<s:property value="#editData.tbGys.id"/>"><s:property value="#editData.tbGys.gysName"/></option>
-      <s:iterator value="gysList" var="pt">
-       	<option class="eee" value ="${pt.id}">${pt.gysName}</option>
-      </s:iterator>
-    </select>
-    </div>
+ 	<s:iterator value="#request['EditList']" var="editData">
+    <li><label>供应商编码</label><input name="id" value="<s:property value="#editData.id"/>" type="text" class="dfinput" /><i></i></li>
+    <li><label>供应商名称</label><input name="gysName" value="<s:property value="#editData.gysName"/>" type="text" class="dfinput" /><i></i></li>
+     <li><label>供应商联系电话</label><input name="gysPhone" value="<s:property value="#editData.gysPhone"/>" type="text" class="dfinput" /><i></i></li>
+    <li><label>供应商地址</label><input name="gysAddress" value="<s:property value="#editData.gysAddress"/>" type="text" class="dfinput" /><i></i></li>
+     <li><label>电子邮箱</label><input name="gysMail" value="<s:property value="#editData.gysMail"/>" type="text" class="dfinput" /><i></i></li>
+    </s:iterator>
     </li>
     <li><label>&nbsp;</label><input name="" type="submit" class="btn" value="确认保存"/></li>
-    </s:iterator>
     </ul>
     
     </form>
@@ -89,5 +77,4 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 
 </body>
-
 </html>
